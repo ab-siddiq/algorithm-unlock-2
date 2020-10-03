@@ -1,0 +1,97 @@
+@font-face {
+    font-family: "kaushan";
+    src: url("assets/fonts/KaushanScript-Regular.ttf");
+}
+
+@font-face {
+    font-family: "montserrat";
+    src: url("assets/fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+    font-family: "roboto";
+    src: url("assets/fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: "montserrat-bold";
+    src: url("assets/fonts/Montserrat-ExtraBold.ttf");
+}
+.text-kaushan {
+    font-family: kaushan;
+}
+
+.text-montserrat {
+    font-family: montserrat;
+}
+
+.text-montserrat-bold {
+    font-family: montserrat-bold;
+}
+
+.text-roboto {
+    font-family: roboto;
+}
+body {color: #666666;}
+h3, h5{color: #682F92;}
+.card-header{background-color: #07657B;}
+.card-body{border: 1px solid #07657B; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;}
+.menu .container {
+    padding: 0 !important;
+}
+
+.menu a {
+    color: #fff
+}
+
+;
+
+.menu .active {
+    color: #FBE389
+}
+
+.navbar {
+    background-color: #07657B; opacity: 
+}
+.menu-burger{border: 1px solid #fff; padding:10px 15px; font-size: 20px; color: #fff}
+
+.header-slider img{height: 100vh;width: 100%;}
+.header-slider i{height: 50px; width: 50px; background-color: #07657B; border-radius: 50%; padding: 8px 0 0 0; text-align: center;}
+.slider-indicator{background-color: #07657B !important; opacity: 1 !important}
+.header-slider .active{background-color: #682F92 !important;}
+.carousel-caption{top: 40%;}
+.container {
+    
+    padding: 40px 0;
+}
+
+
+
+
+.hr {
+    width: 60px;
+    border: 1px solid red
+}
+
+;
+
+.h {
+    width: 600px;
+    border: 1px solid #f6f6f6
+}
+.user img{ height: 100px; width: 100px}
+.services, .services-detail{background-color: #F8F9FA;}
+.lets-talk{background-color: #1CAACE;}
+.lets-talk .container{padding: 0;}
+.working-process i{
+     text-align: center;width: 100px; height: 100px; border-radius: 50%; padding: 25px 0 0 0;background-color: #07657B; color: #fff; 
+}
+.working-process-bg{background-color: #F5F5F5}
+.contact i{text-align: center; background-color: #07657B; color: #fff; height: 40px; width: 40px; padding-top: 8px;}
+.footer-top{background-color: #07657B; color: #e6e6e6;}
+.footer-top li a{color: #e6e6e6;}
+.btn-color{background-color: #07657B;border: none;}
+.btn-subscribe{background-color: #7B489E; border: none;}
+.social-link i{margin: 0 5px; font-size: 20px;color: #E6E6E6;}
+.social-link i:hover{color: #7E4CA1;}
+.footer-bottom{background-color: #003a48;}
