@@ -44,54 +44,99 @@ h3, h5{color: #682F92;}
     color: #fff
 }
 
-;
+.menu li a:hover{background-color: #682F92;padding: 5px 20px;  border-bottom-left-radius: 20px;border-top-right-radius: 20px; }
 
-.menu .active {
-    color: #FBE389
-}
+
 
 .navbar {
     background-color: #07657B; opacity: 
 }
 .menu-burger{border: 1px solid #fff; padding:10px 15px; font-size: 20px; color: #fff}
-
+.overlay{width: 100%; height: 100%; background-color: red;}
 .header-slider img{height: 100vh;width: 100%;}
 .header-slider i{height: 50px; width: 50px; background-color: #07657B; border-radius: 50%; padding: 8px 0 0 0; text-align: center;}
 .slider-indicator{background-color: #07657B !important; opacity: 1 !important}
 .header-slider .active{background-color: #682F92 !important;}
-.carousel-caption{top: 40%;}
+.carousel-caption{top: 30%;}
+.slider-btn-color{background-color: #07657B; color: #fff;text-transform: uppercase; border-radius: 8px;}
 .container {
     
     padding: 40px 0;
 }
-
-
-
 
 .hr {
     width: 60px;
     border: 1px solid red
 }
 
-;
-
 .h {
     width: 600px;
     border: 1px solid #f6f6f6
 }
-.user img{ height: 100px; width: 100px}
 .services, .services-detail{background-color: #F8F9FA;}
-.lets-talk{background-color: #1CAACE;}
+.lets-talk{background-color: #07657B; color: #E6E6E6}
 .lets-talk .container{padding: 0;}
 .working-process i{
      text-align: center;width: 100px; height: 100px; border-radius: 50%; padding: 25px 0 0 0;background-color: #07657B; color: #fff; 
 }
 .working-process-bg{background-color: #F5F5F5}
-.contact i{text-align: center; background-color: #07657B; color: #fff; height: 40px; width: 40px; padding-top: 8px;}
+/*--------------------------------------------------------------
+# Portfolio
+--------------------------------------------------------------*/
+
+.portfolio-menu li{border: 1px solid #07657B;padding: 5px 15px; color: #07657B; cursor: pointer;}
+.portfolio-menu li.active {
+	background-color: #07657B;
+    padding: 5px 15px;
+	color: #fff;
+	border: 0;
+    cursor: pointer;
+}
+  
+.portfolio-overlay {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    visibility: hidden;
+    transition: .3s;
+    opacity:0;
+  }
+  .portfolio-overlay:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #333;
+    opacity: .80;
+    z-index: -1;
+  }
+  .portfolio-overlay h4 {
+    text-transform: capitalize;
+    font-size: 25px;
+  }
+  .single-portfolio:hover .portfolio-overlay {
+    top: 0;
+    visibility: visible;
+    opacity:1;
+  }
+
+
 .footer-top{background-color: #07657B; color: #e6e6e6;}
+.footer-links ul{list-style-type: none;}
+.footer-links i{margin-left: -25px}
 .footer-top li a{color: #e6e6e6;}
-.btn-color{background-color: #07657B;border: none;}
-.btn-subscribe{background-color: #7B489E; border: none;}
+
+.btn-color{background-color: #7B489E; border: none;}
 .social-link i{margin: 0 5px; font-size: 20px;color: #E6E6E6;}
 .social-link i:hover{color: #7E4CA1;}
 .footer-bottom{background-color: #003a48;}
