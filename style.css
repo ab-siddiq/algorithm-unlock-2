@@ -140,3 +140,8 @@ h3, h5{color: #682F92;}
 .social-link i{margin: 0 5px; font-size: 20px;color: #E6E6E6;}
 .social-link i:hover{color: #7E4CA1;}
 .footer-bottom{background-color: #003a48;}
+.portfolio-item img{}
+@media only screen and (max-width: 800px){
+    .header-slider h2{font-size: 40px;}
+    .header-slider{text-align: center !important;}
+}
