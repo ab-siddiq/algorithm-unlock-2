@@ -172,24 +172,17 @@ animate__delay-1s">digital marketing</h2>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12 my-2 text-right">
 
-
-
                         <!-- Button trigger modal -->
                         <button type="button" class="btn btn-primary text-uppercase btn-color" data-toggle="modal" data-target="#exampleModal">
                             let's talk <i class="fas fa-angle-double-right ml-2"></i>
                         </button>
 
 
-                        <!--
-
--->
                         <!-- Modal -->
                         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog" role="document">
                                 <div class="modal-content">
                                     <div class=" text-center">
-                                        <!--                                        <h5 class="modal-title" id="exampleModalLabel">Talk With Project Manager</h5>-->
-                                        
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
@@ -214,6 +207,7 @@ animate__delay-1s">digital marketing</h2>
                                         </div>
 -->
 
+                                        <!--
                                         <form>
                                             <div class="form-group">
                                                 <input type="text" class="form-control" placeholder="Your Name">
@@ -229,12 +223,44 @@ animate__delay-1s">digital marketing</h2>
                                             </div>
 
                                         </form>
-                                    </div>
-                                    <div class="modal-footer ">
-                                        <button type="button" class="btn btn-success text-uppercase" data-dismiss="modal">send message</button>
-                                        <button type="button" class="btn btn-danger text-uppercase" data-dismiss="modal">close</button>
+-->
+                                        <form class="needs-validation" novalidate>
+                                           
+                                                <div class="form-group mb-3">
+                                                    
+                                                    <input type="text" class="form-control" placeholder="Name" value="" required>
+                                                    <div class="valid-feedback">
+                                                        Looks good!
+                                                    </div>
+                                                </div>
+                                                <div class="form-group mb-3">
+                                                    <input type="text" class="form-control"  placeholder="Mobile Number" value="" required>
+                                                    <div class="valid-feedback">
+                                                        Looks good!
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="form-group mb-3">
+                                                    <input type="email" class="form-control"  placeholder="Email Address" value="" required>
+                                                    <div class="valid-feedback">
+                                                        Looks good!
+                                                    </div>
+                                                </div>
+                                                
+                                                 <div class="form-group mb-3">
+                                                    <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+                                                    <div class="valid-feedback">
+                                                        Looks good!
+                                                    </div>
+                                                </div>
+                                                
+                                                
+                                            <button class="btn btn-success" type="submit">Submit form</button>
+                                            <button type="button" class="btn btn-danger text-uppercase" data-dismiss="modal">close</button>
+                                        </form>
 
                                     </div>
+                                
                                 </div>
                             </div>
                         </div>
