@@ -5,15 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Algorithm Unlock</title>
+
     <!--    BOOTSTRAP CSS-->
     <link rel="icon" type="image/gif" href="assets/images/au_favicon.png">
-
-<!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">-->
-   <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+    <!--bootstrap-->
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
     <!--FONT AWSOME CSS-->
     <link rel="stylesheet" href="assets/fontawsome/css/all.css">
-<!--    animate.css-->
- <link rel="stylesheet" href="assets/css/animate.min.css">
+    <!--    animate.css-->
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <!--    slick slider css-->
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
     <!--CUSTOM CSS-->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -45,7 +48,7 @@
     <!-- SECTION END-->
     <!--SLIDE SECTION START-->
     <div class="header-slider ">
-        
+
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li class="active slider-indicator" data-target="#carouselExampleIndicators" data-slide-to="0"></li>
@@ -63,9 +66,17 @@
                         <div class="row">
                             <div class="col-lg-5 col-md-9 col-sm-12">
                                 <h2 class="text-uppercase display-4 font-weight-bold animate__animated animate__fadeInLeft
-animate__delay-1s" >website design</h2>
+animate__delay-1s">website design</h2>
                                 <p class="animate__animated animate__fadeInRight animate__delay-2s">Are you thinking to design a website? We are ready to gift your dream pixel perfect design</p>
                                 <button class="btn slider-btn-color btn-lg animate__animated animate__fadeInUp animate__delay-3s">contact us</button>
+
+
+
+
+
+
+
+
                             </div>
                         </div>
                     </div>
@@ -78,7 +89,8 @@ animate__delay-1s" >website design</h2>
                                 <h2 class="text-uppercase display-4 font-weight-bold animate__animated animate__fadeInLeft
 animate__delay-1s">web development</h2>
                                 <p class="animate__animated animate__fadeInRight animate__delay-2s">Are you thinking to build web based system application? You are in right place!</p>
-                                <button class="btn slider-btn-color btn-lg animate__animated animate__fadeInUp animate__delay-3s" >contact us</button>
+                                <button class="btn slider-btn-color btn-lg animate__animated animate__fadeInUp animate__delay-3s">contact us</button>
+
                             </div>
                         </div>
                     </div>
@@ -89,7 +101,7 @@ animate__delay-1s">web development</h2>
                         <div class="row">
                             <div class="col-lg-6 col-md-10 col-sm-12">
                                 <h2 class="text-uppercase display-4 font-weight-bold animate__animated animate__fadeInLeft
-animate__delay-1s">mobile application</h2>
+">mobile application</h2>
                                 <p class="animate__animated animate__fadeInRight animate__delay-2s">Need a mobile application? We have perfect people to do your job.</p>
                                 <button class="btn slider-btn-color btn-lg animate__animated animate__fadeInUp animate__delay-3s">contact us</button>
                             </div>
@@ -102,7 +114,8 @@ animate__delay-1s">mobile application</h2>
                         <div class="row">
                             <div class="col-lg-6 col-md-10 col-sm-12">
                                 <h2 class="text-uppercase display-4 font-weight-bold animate__animated animate__fadeInLeft
-animate__delay-1s">graphics design</h2>
+animate__delay-1s">graphics design
+                                </h2>
                                 <p class="animate__animated animate__fadeInRight animate__delay-2s">Thinking about business card, banner, website design? Nothing to worry.</p>
                                 <button class="btn slider-btn-color btn-lg animate__animated animate__fadeInUp animate__delay-3s">contact us</button>
                             </div>
@@ -154,10 +167,81 @@ animate__delay-1s">digital marketing</h2>
         <div class="lets-talk py-3">
             <div class="container px-2">
                 <div class="row justify-content-middle align-middle px-2">
-                    <div class="col-lg-6  col-md-6 col-sm-12">
-                        <p class="mb-0 pt-1">Need assitance with complex tech project?</p>
+                    <div class="col-lg-6  col-md-6 col-sm-12 mb-4 my-2 ">
+                        <p class=" mb-0">Need assitance with complex tech project?</p>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 text-right"><button class="btn btn-primary text-uppercase btn-color">let's talk <i class="fas fa-angle-double-right ml-2"></i></button></div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 my-2 text-right">
+
+
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary text-uppercase btn-color" data-toggle="modal" data-target="#exampleModal">
+                            let's talk <i class="fas fa-angle-double-right ml-2"></i>
+                        </button>
+
+
+                        <!--
+
+-->
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class=" text-center">
+                                        <!--                                        <h5 class="modal-title" id="exampleModalLabel">Talk With Project Manager</h5>-->
+                                        
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        <div class="text-capitalize text-center text-primary">
+                                            <img src="assets/images/team/team-2.jpg" alt="" class="img-fluid img-thumbnail rounded-circle mt-3 mb-2">
+                                            <h4 class="my-0">Nur A Alam Munna</h4>
+                                            <h5 class="my-0">project manager</h5>
+                                            <p class="my-0">algorithm unlock</p>
+                                        </div>
+                                    </div>
+                                    <div class="modal-body">
+                                        <!--
+                                        <div class="row text-capitalize text-primary mb-4">
+                                            <div class="col-5">
+                                                <img src="assets/images/team/team-2.jpg" alt="" class="img-fluid img-thumbnail rounded-circle">
+                                            </div>
+                                            <div class="col-7 text-left">
+                                                <p class="my-0">Nur A Alam Munna</p>
+                                                <p class="my-0">project manager</p>
+                                                <p class="my-0">algorithm unlock</p>
+                                            </div>
+                                        </div>
+-->
+
+                                        <form>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="Your Name">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="Mobile Number">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="Email Address">
+                                            </div>
+                                            <div class="form-group">
+                                                <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
+                                            </div>
+
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer ">
+                                        <button type="button" class="btn btn-success text-uppercase" data-dismiss="modal">send message</button>
+                                        <button type="button" class="btn btn-danger text-uppercase" data-dismiss="modal">close</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -172,23 +256,29 @@ animate__delay-1s">digital marketing</h2>
                         <h6 class="text-capitalize text-kaushan text-center">what we do</h6>
                         <h3 class="text-uppercase text-montserrat text-center">story about us</h3>
                         <hr class="hr">
-                        <div class="text-justify">
+
+                    </div>
+                    <div class="row justify-content-center pt-5 px-5">
+                        <div class="col-lg-6 col-md-8 col-sm-12 text-justify">
                             <p> Algorithm Unlock develop application software for state agencies and another state agencies. It combines state of the art solution design, robust back-end systems with efficient project management in a single turnkey solution for national IT infrastructure undertakings. </p>
                             <p>
                                 Algorithm Unlock has worked School Management System, Hospital Management System, Hotel Management System, Workshop Management System, Pettrol pamp management system . In addition, Algorithm Unlock provides highly specialized system integration of 3rd party hardware/software with legacy systems, including identity governance, Enterprise Single Sign-On, identity and access management solutions to large organizations like banks, telecom companies and multinational companies. </p>
                             <p>
                                 We provide high-quality products with excellent service and solution for: Dogotal Forensic - apart from sale we can arrange training courses for our customers, Safety & Security solution, Testing Equipment for Soil and Metarials, Geotechnical & structural monitoring and Survey Equipment etc. We supply a range of quility equipment from arounf the world.</p>
                         </div>
-                    </div>
-                    <div class="row justify-content-center pt-5">
-                        <div class="col-lg-4 col-md-6 col-12 mb-3 text-center"><img class="img-thumbnail" src="assets/images/story-1.jpg" alt=""></div>
-                        <div class="col-lg-4 col-md-6 col-12 mb-3 text-center"><img class="img-thumbnail" src="assets/images/story-2.jpg" alt=""></div>
-                        <div class="col-lg-4 col-md-6 col-12 mb-3 text-center"><img class="img-thumbnail" src="assets/images/story-3.jpg" alt=""></div>
+                        <div class="col-lg-6 col-md-4 col-sm-12 ">
+                            <img src="assets/images/another/Background.JPG" class="img-fluid h-100" alt="">
+                        </div>
+
+
+
                     </div>
 
                 </div>
+
             </div>
         </div>
+
     </section>
     <!-- SECTION END-->
     <!-- SECTION START-->
@@ -231,7 +321,7 @@ animate__delay-1s">digital marketing</h2>
                             <div class="col-2 text-center"><i class="fas fa-mobile fa-2x"></i></div>
                             <div class="col-10 text-left">
                                 <h4 class="text-uppercase">mobile app</h4>
-                                <p>We also provide mobile application. Our mobile applications are smooth, user friendly, smooth and fast with unique interface.  We also provide live support with terms and conditions. </p>
+                                <p>We also provide mobile application. Our mobile applications are smooth, user friendly, smooth and fast with unique interface. We also provide live support with terms and conditions. </p>
                             </div>
                         </div>
                     </div>
@@ -275,93 +365,93 @@ animate__delay-1s">digital marketing</h2>
                 <div class="col-lg-5 text-center">
                     <h5 class="text-capitalize text-kaushan pt-5">for all devices</h5>
                     <h3 class="text-uppercase text-montserrat">unique design</h3>
-                    <hr class=" hr">                
+                    <hr class=" hr">
                 </div>
             </div>
 
-       
-        <div id="carouselExampleIndicator" class="carousel slide m-auto" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li class="active slider-indicator" data-target="#carouselExampleIndicator" data-slide-to="0"></li>
-                <li class="slider-indicator" data-target="#carouselExampleIndicator" data-slide-to="1"></li>
-                <li class="slider-indicator" data-target="#carouselExampleIndicator" data-slide-to="2"></li>
-                <li class="slider-indicator" data-target="#carouselExampleIndicator" data-slide-to="3"></li>
-                <li class="slider-indicator" data-target="#carouselExampleIndicator" data-slide-to="4"></li>
-                <li class="slider-indicator" data-target="#carouselExampleIndicator" data-slide-to="5"></li>
-            </ol>
-            <div class="carousel-inner ">
 
-                <div class="carousel-item active">
-                    <img class="d-block " src="assets/images/background/design-overlay-min.png" alt="First slide">
-                    <div class="carousel-caption text-left">
-                        <div class="row">
-                            <div class="col-lg-5 col-md-9 col-sm-12">
-                               
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block " src="assets/images/background/d2-overlay-min.png" alt="Second slide">
-                    <div class="carousel-caption text-left">
-                        <div class="row">
-                            <div class="col-lg-5 col-md-10 col-sm-12">
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block " src="assets/images/background/mobile2overlay-min.png" alt="Third slide">
-                    <div class="carousel-caption text-left">
-                        <div class="row">
-                            <div class="col-lg-6 col-md-10 col-sm-12">
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block " src="assets/images/background/g2overlay-min.png" alt="Fourth slide">
-                    <div class="carousel-caption text-left">
-                        <div class="row">
-                            <div class="col-lg-6 col-md-10 col-sm-12">
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block " src="assets/images/background/e1overlay-min.png" alt="Fifth slide">
-                    <div class="carousel-caption text-left">
-                        <div class="row">
-                            <div class="col-lg-6 col-md-10 col-sm-12">
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block " src="assets/images/background/digital3overlay-min.png" alt="Sixth slide">
-                    <div class="carousel-caption text-left">
-                        <div class="row">
-                            <div class="col-lg-6 col-md-10 col-sm-12">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div id="carouselExampleIndicator" class="carousel slide m-auto" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li class="active slider-indicator" data-target="#carouselExampleIndicator" data-slide-to="0"></li>
+                    <li class="slider-indicator" data-target="#carouselExampleIndicator" data-slide-to="1"></li>
+                    <li class="slider-indicator" data-target="#carouselExampleIndicator" data-slide-to="2"></li>
+                    <li class="slider-indicator" data-target="#carouselExampleIndicator" data-slide-to="3"></li>
+                    <li class="slider-indicator" data-target="#carouselExampleIndicator" data-slide-to="4"></li>
+                    <li class="slider-indicator" data-target="#carouselExampleIndicator" data-slide-to="5"></li>
+                </ol>
+                <div class="carousel-inner ">
 
+                    <div class="carousel-item active">
+                        <img class="d-block " src="assets/images/background/design-overlay-min.png" alt="First slide">
+                        <div class="carousel-caption text-left">
+                            <div class="row">
+                                <div class="col-lg-5 col-md-9 col-sm-12">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block " src="assets/images/background/d2-overlay-min.png" alt="Second slide">
+                        <div class="carousel-caption text-left">
+                            <div class="row">
+                                <div class="col-lg-5 col-md-10 col-sm-12">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block " src="assets/images/background/mobile2overlay-min.png" alt="Third slide">
+                        <div class="carousel-caption text-left">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-10 col-sm-12">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block " src="assets/images/background/g2overlay-min.png" alt="Fourth slide">
+                        <div class="carousel-caption text-left">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-10 col-sm-12">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block " src="assets/images/background/e1overlay-min.png" alt="Fifth slide">
+                        <div class="carousel-caption text-left">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-10 col-sm-12">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block " src="assets/images/background/digital3overlay-min.png" alt="Sixth slide">
+                        <div class="carousel-caption text-left">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-10 col-sm-12">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicator" role="button" data-slide="prev">
+                    <span class="" aria-hidden="true"><i class="fas fa-angle-left fa-2x"></i></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicator" role="button" data-slide="next">
+                    <span class="" aria-hidden="true"><i class="fas fa-angle-right fa-2x"></i></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicator" role="button" data-slide="prev">
-                <span class="" aria-hidden="true"><i class="fas fa-angle-left fa-2x"></i></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicator" role="button" data-slide="next">
-                <span class="" aria-hidden="true"><i class="fas fa-angle-right fa-2x"></i></span>
-                <span class="sr-only">Next</span>
-            </a>
         </div>
-    </div>
     </div>
     <!-- SECTION END-->
     <!-- SECTION START-->
@@ -478,10 +568,16 @@ animate__delay-1s">digital marketing</h2>
     </div>
     <!-- SECTION END-->
     <!--    WORKING PROCESS SECTION START-->
-    <section id="">
+    <section id="process">
         <div class="working-process">
             <div class="container px-2">
-                <div class="row text-center">
+                <div class="row text-center justify-content-center">
+                    <div class="col-10 text-center pb-2">
+                        <h5 class="text-capitalize text-kaushan">approach</h5>
+                        <h3 class="text-uppercase text-montserrat">How We Work</h3>
+                        <hr class="hr">
+                        <!--                        <p class="text-roboto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>-->
+                    </div>
                     <div class="col-lg-3 col-md-6 col-sm-12 ">
                         <div class="working-process-bg px-3 py-4">
                             <i class="far fa-comments fa-3x"></i>
@@ -556,14 +652,20 @@ animate__delay-1s">digital marketing</h2>
     </div>
     <!-- SECTION END-->
     <!-- SECTION START-->
-    <div class="sponsor bg-light">
+    <div class="sponsor bg-light m-auto text-center">
         <div class="container px-2">
-            <div class="row">
-                <div class="col my-3"><img src="assets/images/s1.png" class="img-fluid" alt=""></div>
-                <div class="col my-3"><img src="assets/images/s2.png" class="img-fluid" alt=""></div>
-                <div class="col my-3"><img src="assets/images/s3.png" class="img-fluid" alt=""></div>
-                <div class="col my-3"><img src="assets/images/s4.png" class="img-fluid" alt=""></div>
-                <div class="col my-3"><img src="assets/images/s5.png" class="img-fluid" alt=""></div>
+            <div class="row autoplay ">
+                <div class="col my-3 "><img src="assets/images/s1.png" class="img-fluid m-auto" alt=""></div>
+                <div class="col my-3 "><img src="assets/images/s2.png" class="img-fluid m-auto" alt=""></div>
+                <div class="col my-3 "><img src="assets/images/s3.png" class="img-fluid m-auto" alt=""></div>
+                <div class="col my-3 "><img src="assets/images/s4.png" class="img-fluid m-auto" alt=""></div>
+                <div class="col my-3 "><img src="assets/images/s5.png" class="img-fluid m-auto" alt=""></div>
+                <div class="col my-3 "><img src="assets/images/s5.png" class="img-fluid m-auto" alt=""></div>
+                <div class="col my-3 "><img src="assets/images/s5.png" class="img-fluid m-auto" alt=""></div>
+                <div class="col my-3 "><img src="assets/images/s5.png" class="img-fluid m-auto" alt=""></div>
+                <div class="col my-3 "><img src="assets/images/s5.png" class="img-fluid m-auto" alt=""></div>
+                <div class="col my-3 "><img src="assets/images/s5.png" class="img-fluid m-auto" alt=""></div>
+                <div class="col my-3 "><img src="assets/images/s5.png" class="img-fluid m-auto" alt=""></div>
             </div>
 
         </div>
@@ -571,8 +673,8 @@ animate__delay-1s">digital marketing</h2>
     <!-- SECTION END-->
 
     <!--PORTFOLIO SECTION START   -->
-    <section id="portfolio">
-        <div class="container px-2">
+    <section id="portfolio" class="">
+        <div class="container px-2 portfolio-section">
             <div class="row text-center">
                 <div class="col-12 ">
                     <ul class="portfolio-menu list-inline">
@@ -585,7 +687,7 @@ animate__delay-1s">digital marketing</h2>
                 </div>
             </div>
             <div class="row portfolio-item">
-                <div class="col-lg-3 col-md-6 col-sm-12 design graphic mb-4">
+                <div class="col-lg-3 col-md-4 col-sm-6 design graphic mb-4">
                     <div class="single-portfolio">
                         <img src="assets/images/portfolio/p1.png" class="img-fluid" alt="">
                         <div class="portfolio-overlay">
@@ -594,7 +696,7 @@ animate__delay-1s">digital marketing</h2>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 design graphic mb-4">
+                <div class="col-lg-3 col-md-4 col-sm-6 design graphic mb-4">
                     <div class="single-portfolio">
                         <img src="assets/images/portfolio/p2.png" class="img-fluid" alt="">
                         <div class="portfolio-overlay">
@@ -603,7 +705,7 @@ animate__delay-1s">digital marketing</h2>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 dev app mb-4">
+                <div class="col-lg-3 col-md-4 col-sm-6 dev app mb-4">
                     <div class="single-portfolio">
                         <img src="assets/images/portfolio/p3.png" class="img-fluid" alt="">
                         <div class="portfolio-overlay">
@@ -612,7 +714,7 @@ animate__delay-1s">digital marketing</h2>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 dev app mb-4">
+                <div class="col-lg-3 col-md-4 col-sm-6 dev app mb-4">
                     <div class="single-portfolio">
                         <img src="assets/images/portfolio/p4.png" class="img-fluid" alt="">
                         <div class="portfolio-overlay">
@@ -621,7 +723,7 @@ animate__delay-1s">digital marketing</h2>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 dev app mb-4">
+                <div class="col-lg-3 col-md-4 col-sm-6 dev app mb-4">
                     <div class="single-portfolio">
                         <img src="assets/images/portfolio/p5.png" class="img-fluid" alt="">
                         <div class="portfolio-overlay">
@@ -630,7 +732,7 @@ animate__delay-1s">digital marketing</h2>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 design app mb-4">
+                <div class="col-lg-3 col-md-4 col-sm-6 design app mb-4">
                     <div class="single-portfolio">
                         <img src="assets/images/portfolio/p6.png" class="img-fluid" alt="">
                         <div class="portfolio-overlay">
@@ -639,7 +741,7 @@ animate__delay-1s">digital marketing</h2>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 dev graphic mb-4">
+                <div class="col-lg-3 col-md-4 col-sm-6 dev graphic mb-4">
                     <div class="single-portfolio">
                         <img src="assets/images/portfolio/p7.png" class="img-fluid" alt="">
                         <div class="portfolio-overlay">
@@ -648,7 +750,7 @@ animate__delay-1s">digital marketing</h2>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 app graphic mb-4">
+                <div class="col-lg-3 col-md-4 col-sm-6 app graphic mb-4">
                     <div class="single-portfolio">
                         <img src="assets/images/portfolio/p8.png" class="img-fluid" alt="">
                         <div class="portfolio-overlay">
@@ -657,7 +759,7 @@ animate__delay-1s">digital marketing</h2>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 dev graphic mb-4">
+                <div class="col-lg-3 col-md-4 col-sm-6 dev graphic mb-4">
                     <div class="single-portfolio">
                         <img src="assets/images/portfolio/p9.png" class="img-fluid" alt="">
                         <div class="portfolio-overlay">
@@ -666,7 +768,7 @@ animate__delay-1s">digital marketing</h2>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 dev graphic mb-4">
+                <div class="col-lg-3 col-md-4 col-sm-6 dev graphic mb-4">
                     <div class="single-portfolio">
                         <img src="assets/images/portfolio/p10.png" class="img-fluid" alt="">
                         <div class="portfolio-overlay">
@@ -675,7 +777,7 @@ animate__delay-1s">digital marketing</h2>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 app graphic mb-4">
+                <div class="col-lg-3 col-md-4 col-sm-6 app graphic mb-4">
                     <div class="single-portfolio">
                         <img src="assets/images/portfolio/p11.png" class="img-fluid" alt="">
                         <div class="portfolio-overlay">
@@ -684,7 +786,7 @@ animate__delay-1s">digital marketing</h2>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 app graphic mb-4">
+                <div class="col-lg-3 col-md-4 col-sm-6 app graphic mb-4">
                     <div class="single-portfolio">
                         <img src="assets/images/portfolio/p12.png" class="img-fluid" alt="">
                         <div class="portfolio-overlay">
@@ -767,12 +869,7 @@ animate__delay-1s">digital marketing</h2>
     <!-- SECTION END-->
 
     <!-- SECTION START-->
-    <div class="">
-        <div class="">
 
-
-        </div>
-    </div>
     <!-- SECTION END-->
     <!-- SECTION START-->
     <!-- ======= Contact Section ======= -->
@@ -788,11 +885,11 @@ animate__delay-1s">digital marketing</h2>
                 </div>
             </div>
 
-            <div class="row py-3">
-                
+            <div class="row py-3 ">
+
                 <div class="col-lg-4  col-md-12 col-sm-12 mb-3">
                     <div class="info">
-                        <div class="address">
+                        <div class="address text-sm-center">
                             <h4><i class="fas fa-map-marker-alt mr-2"></i>Location:</h4>
                             <p>Ka - 28/4/1, Dhalibari More, Saudi Masjid Road, Norda, Vatara, 1212 Dhaka, Dhaka Division, Bangladesh</p>
                         </div>
@@ -806,9 +903,9 @@ animate__delay-1s">digital marketing</h2>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="col-lg-8 col-md-12 col-sm-12  mb-3">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.3153816698486!2d90.42341141498241!3d23.80738168456132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1e1731afb799d5d3!2sSpeed%20Auto%20Care%20Ltd.!5e0!3m2!1sen!2sbd!4v1601895100670!5m2!1sen!2sbd" width="100%" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.3153816698486!2d90.42341141498241!3d23.80738168456132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1e1731afb799d5d3!2sSpeed%20Auto%20Care%20Ltd.!5e0!3m2!1sen!2sbd!4v1601895100670!5m2!1sen!2sbd" width="100%" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>
             </div>
         </div>
@@ -829,7 +926,7 @@ animate__delay-1s">digital marketing</h2>
                                 <strong>Phone:</strong> +880 1724759004<br>
                                 <strong>Email:</strong> algorithmunlock44@gmail.com<br>
                             </p>
-                            
+
                             <div class="social-link mt-3">
                                 <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
                                 <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
@@ -894,9 +991,7 @@ animate__delay-1s">digital marketing</h2>
                 </div>
             </div>
         </div>
-<div class="row">
-    
-</div>
+
         <div class="footer-bottom">
             <div class="container px-2">
                 <div class="row">
@@ -908,12 +1003,18 @@ animate__delay-1s">digital marketing</h2>
     </footer>
     <!-- SECTION END-->
 
-
+    <!--jquery-->
     <script src="assets/js/jquery-3.5.1.slim.min.js"></script>
+    <!--    bootstrap-->
     <script src="assets/bootstrap/bootstrap.min.js"></script>
+    <!--    isotop filter-->
     <script src="assets/js/isotope.min.js"></script>
+    <!--    slick slider-->
+    <script src="assets/js/slick.min.js"></script>
+    <!--    google map-->
+    <script src="http://maps.google.com/maps/api/js"></script>
+    <script src="assets/js/gmaps.min.js"></script>
+    <!--    custom js-->
     <script src="assets/js/main.js"></script>
 
-</body>
-
-</html>
+</body></html>
