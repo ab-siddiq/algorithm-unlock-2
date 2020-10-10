@@ -17,6 +17,7 @@ h3, h5{color: #682F92;}
 .hr {width: 60px; border: 1px solid red}
 .h {width: 600px; border: 1px solid #f6f6f6}
 .btn-color{background-color: #7B489E; border: none;}
+/*img{width: 100%; height: auto;}*/
 /*bootstrap card customization*/
 .card-header{background-color: #07657B;}
 .card-body{border: 1px solid #07657B; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;}
@@ -34,6 +35,9 @@ h3, h5{color: #682F92;}
 .header-slider .active{background-color: #682F92 !important;}
 .header-slider .carousel-caption{top: 25%;}
 .slider-btn-color{background-color: #07657B; color: #fff;text-transform: uppercase; border-radius: 8px;}
+.slider-modal img{width: 100px;}
+.slider-social-link i{color: #07657B; font-size: 30px}
+.slider-social-link i:hover{color: #6B3594}
 /*lets talk*/
 .lets-talk{background-color: #07657B; color: #E6E6E6}
 .lets-talk .container{padding: 0;}
