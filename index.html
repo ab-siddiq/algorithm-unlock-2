@@ -17,6 +17,8 @@
     <!--    slick slider css-->
     <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <!--    fancy box-->
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
     <!--CUSTOM CSS-->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -68,9 +70,33 @@
                                 <h2 class="text-uppercase display-4 font-weight-bold animate__animated animate__fadeInLeft
 animate__delay-1s">website design</h2>
                                 <p class="animate__animated animate__fadeInRight animate__delay-2s">Are you thinking to design a website? We are ready to gift your dream pixel perfect design</p>
-                                <button class="btn slider-btn-color btn-lg animate__animated animate__fadeInUp animate__delay-3s">contact us</button>
+                                <a class="btn slider-btn-color btn-lg animate__animated animate__fadeInUp animate__delay-3s" href="#contact">contact us</a>
 
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Launch demo modal
+</button>
 
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog " role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
@@ -167,7 +193,7 @@ animate__delay-1s">digital marketing</h2>
         <div class="lets-talk py-3">
             <div class="container px-2">
                 <div class="row justify-content-middle align-middle px-2">
-                    <div class="col-lg-6  col-md-6 col-sm-12 mb-4 my-2 ">
+                    <div class="col-lg-6  col-md-6 col-sm-12 mb-4 my-2 m-auto">
                         <p class=" mb-0">Need assitance with complex tech project?</p>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12 my-2 text-right">
@@ -187,10 +213,9 @@ animate__delay-1s">digital marketing</h2>
                                             <span aria-hidden="true">&times;</span>
                                         </button>
                                         <div class="text-capitalize text-center text-primary">
-                                            <img src="assets/images/team/team-2.jpg" alt="" class="img-fluid img-thumbnail rounded-circle mt-3 mb-2">
-                                            <h4 class="my-0">Nur A Alam Munna</h4>
-                                            <h5 class="my-0">project manager</h5>
-                                            <p class="my-0">algorithm unlock</p>
+                                            <img src="assets/images/team/team-2.jpg" alt="" class="img-fluid img-thumbnail rounded-circle mt-5 mb-3">
+                                            <h3 class="">Nur A Alam Munna</h3>
+                                            <p class="my-0"><label for="" class="text-uppercase">ceo</label>, algorithm unlock</p>
                                         </div>
                                     </div>
                                     <div class="modal-body">
@@ -225,42 +250,42 @@ animate__delay-1s">digital marketing</h2>
                                         </form>
 -->
                                         <form class="needs-validation" novalidate>
-                                           
-                                                <div class="form-group mb-3">
-                                                    
-                                                    <input type="text" class="form-control" placeholder="Name" value="" required>
-                                                    <div class="valid-feedback">
-                                                        Looks good!
-                                                    </div>
+
+                                            <div class="form-group mb-3">
+
+                                                <input type="text" class="form-control" placeholder="Name" value="" required>
+                                                <div class="valid-feedback">
+                                                    Looks good!
                                                 </div>
-                                                <div class="form-group mb-3">
-                                                    <input type="tel" pattern=".{11}" class="form-control"  placeholder="Mobile Number" value="" required>
-                                                    <div class="valid-feedback">
-                                                        Looks good!
-                                                    </div>
+                                            </div>
+                                            <div class="form-group mb-3">
+                                                <input type="tel" pattern=".{11}" class="form-control" placeholder="Mobile Number" value="" required>
+                                                <div class="valid-feedback">
+                                                    Looks good!
                                                 </div>
-                                                
-                                                <div class="form-group mb-3">
-                                                    <input type="email" class="form-control"  placeholder="Email Address" value="" required>
-                                                    <div class="valid-feedback">
-                                                        Looks good!
-                                                    </div>
+                                            </div>
+
+                                            <div class="form-group mb-3">
+                                                <input type="email" class="form-control" placeholder="Email Address" value="" required>
+                                                <div class="valid-feedback">
+                                                    Looks good!
                                                 </div>
-                                                
-                                                 <div class="form-group mb-3">
-                                                    <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
-                                                    <div class="valid-feedback">
-                                                        Looks good!
-                                                    </div>
+                                            </div>
+
+                                            <div class="form-group mb-3">
+                                                <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+                                                <div class="valid-feedback">
+                                                    Looks good!
                                                 </div>
-                                                
-                                                
+                                            </div>
+
+
                                             <button class="btn btn-success text-uppercase" type="submit">send message</button>
                                             <button type="button" class="btn btn-danger text-uppercase" data-dismiss="modal">close</button>
                                         </form>
 
                                     </div>
-                                
+
                                 </div>
                             </div>
                         </div>
@@ -409,59 +434,73 @@ animate__delay-1s">digital marketing</h2>
 
                     <div class="carousel-item active">
                         <img class="d-block " src="assets/images/background/design-overlay-min.png" alt="First slide">
-                        <div class="carousel-caption text-left">
-                            <div class="row">
-                                <div class="col-lg-5 col-md-9 col-sm-12">
 
+                        <div class="carousel-caption">
+                            <div class="row">
+                                <div class="col">
+                                    <a href="https://www.youtube.com/watch?v=f3NWvUV8MD8" class="img-fluid" data-fancybox data-caption="Caption for single image">
+                                        <i class="fas fa-play play-btn"></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img class="d-block " src="assets/images/background/d2-overlay-min.png" alt="Second slide">
-                        <div class="carousel-caption text-left">
+                        <div class="carousel-caption">
                             <div class="row">
-                                <div class="col-lg-5 col-md-10 col-sm-12">
-
+                                <div class="col">
+                                    <a href="https://www.youtube.com/watch?v=f3NWvUV8MD8" class="img-fluid" data-fancybox data-caption="Caption for single image">
+                                        <i class="fas fa-play play-btn"></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img class="d-block " src="assets/images/background/mobile2overlay-min.png" alt="Third slide">
-                        <div class="carousel-caption text-left">
+                        <div class="carousel-caption">
                             <div class="row">
-                                <div class="col-lg-6 col-md-10 col-sm-12">
-
+                                <div class="col">
+                                    <a href="https://www.youtube.com/watch?v=f3NWvUV8MD8" class="img-fluid" data-fancybox data-caption="Caption for single image">
+                                        <i class="fas fa-play play-btn"></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img class="d-block " src="assets/images/background/g2overlay-min.png" alt="Fourth slide">
-                        <div class="carousel-caption text-left">
+                        <div class="carousel-caption">
                             <div class="row">
-                                <div class="col-lg-6 col-md-10 col-sm-12">
-
+                                <div class="col">
+                                    <a href="https://www.youtube.com/watch?v=f3NWvUV8MD8" class="img-fluid" data-fancybox data-caption="Caption for single image">
+                                        <i class="fas fa-play play-btn"></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img class="d-block " src="assets/images/background/e1overlay-min.png" alt="Fifth slide">
-                        <div class="carousel-caption text-left">
+                        <div class="carousel-caption">
                             <div class="row">
-                                <div class="col-lg-6 col-md-10 col-sm-12">
-
+                                <div class="col">
+                                    <a href="https://www.youtube.com/watch?v=f3NWvUV8MD8" class="img-fluid" data-fancybox data-caption="Caption for single image">
+                                        <i class="fas fa-play play-btn"></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img class="d-block " src="assets/images/background/digital3overlay-min.png" alt="Sixth slide">
-                        <div class="carousel-caption text-left">
+                        <div class="carousel-caption">
                             <div class="row">
-                                <div class="col-lg-6 col-md-10 col-sm-12">
+                                <div class="col">
+                                    <a href="https://www.youtube.com/watch?v=f3NWvUV8MD8" class="img-fluid" data-fancybox data-caption="Caption for single image">
+                                        <i class="fas fa-play play-btn"></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -651,28 +690,34 @@ animate__delay-1s">digital marketing</h2>
                     <p class="text-roboto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-3 col-sm-6 my-3 text-center">
-                    <img src="assets/images/team/team-1.jpg" class="img-thumbnail" alt="">
-                    <h5 class="text-capitalize text-montserrat mt-3">Md. Deloar Hossain Nion</h5>
-                    <p class="text-capitalize">Board of Directors</p>
+            <div class="container">
+                <div class="row board-member">
+                    <div class="col my-3 text-center">
+                        <img src="assets/images/team/team-1.png" class="img-thumbnail" alt="">
+                        <h5 class="text-capitalize text-montserrat mt-3">Md. Deloar Hossain Nion</h5>
+                        <p class="text-capitalize">Board of Directors</p>
+                    </div>
+                    <div class="col my-3 text-center">
+                        <img src="assets/images/team/team-2.png" class="img-thumbnail" alt="">
+                        <h5 class="text-capitalize text-montserrat mt-3">Md. Nur-A-Alam Munna</h5>
+                        <p class="text-ca mt-3pitalize">Chief Executing Officer (CEO)</p>
+                    </div>
+                    <div class="col my-3 text-center">
+                        <img src="assets/images/team/team-3.png" class="img-thumbnail" alt="">
+                        <h5 class="text-capitalize text-montserrat mt-3">Md. Mahbubur Rahman</h5>
+                        <p class="text-ca mt-3pitalize">Chief Operation Officer (COO)</p>
+                    </div>
+                    <div class="col my-3 text-center">
+                        <img src="assets/images/team/team-4.png" class="img-thumbnail" alt="">
+                        <h5 class="text-capitalize text-montserrat mt-3">Md. Aminul Islam Imrul</h5>
+                        <p class="text-ca mt-3pitalize">Chief Technology Officer (CTO)</p>
+                    </div>
+                    <div class="col my-3 text-center">
+                        <img src="assets/images/team/team-4.png" class="img-thumbnail" alt="">
+                        <h5 class="text-capitalize text-montserrat mt-3">Md. Aminul Islam Imrul</h5>
+                        <p class="text-ca mt-3pitalize">Chief Technology Officer (CTO)</p>
+                    </div>
                 </div>
-                <div class="col-lg-3 col-sm-6 my-3 text-center">
-                    <img src="assets/images/team/team-2.jpg" class="img-thumbnail" alt="">
-                    <h5 class="text-capitalize text-montserrat mt-3">Md. Nur-A-Alam Munna</h5>
-                    <p class="text-ca mt-3pitalize">Chief Executing Officer (CEO)</p>
-                </div>
-                <div class="col-lg-3 col-sm-6 my-3 text-center">
-                    <img src="assets/images/team/team-3.jpg" class="img-thumbnail" alt="">
-                    <h5 class="text-capitalize text-montserrat mt-3">Md. Mahbubur Rahman</h5>
-                    <p class="text-ca mt-3pitalize">Chief Operation Officer (COO)</p>
-                </div>
-                <div class="col-lg-3 col-sm-6 my-3 text-center">
-                    <img src="assets/images/team/team-4.jpg" class="img-thumbnail" alt="">
-                    <h5 class="text-capitalize text-montserrat mt-3">Md. Aminul Islam Imrul</h5>
-                    <p class="text-ca mt-3pitalize">Chief Technology Officer (CTO)</p>
-                </div>
-
             </div>
         </div>
     </div>
@@ -716,9 +761,14 @@ animate__delay-1s">digital marketing</h2>
                 <div class="col-lg-3 col-md-4 col-sm-6 design graphic mb-4">
                     <div class="single-portfolio">
                         <img src="assets/images/portfolio/p1.png" class="img-fluid" alt="">
+
                         <div class="portfolio-overlay">
                             <h4>project title</h4>
-                            <p>project short description</p>
+                            <p>project short description </p>
+                            <a href="assets/images/portfolio/p1.png" class="img-fluid" data-fancybox data-caption="Caption for single image">
+                                <!--                            <img src="" class="img-fluid" alt="" />-->
+                                <a class="btn btn-link mx-0">view more</a>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -1040,6 +1090,8 @@ animate__delay-1s">digital marketing</h2>
     <!--    google map-->
     <script src="http://maps.google.com/maps/api/js"></script>
     <script src="assets/js/gmaps.min.js"></script>
+    <!--    fancybox-->
+    <script src="assets/js/jquery.fancybox.min.js"></script>
     <!--    custom js-->
     <script src="assets/js/main.js"></script>
 

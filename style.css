@@ -32,17 +32,21 @@ h3, h5{color: #682F92;}
 .header-slider i{height: 50px; width: 50px; background-color: #07657B; border-radius: 50%; padding: 8px 0 0 0; text-align: center;}
 .slider-indicator{background-color: #07657B !important; opacity: 1 !important}
 .header-slider .active{background-color: #682F92 !important;}
-.carousel-caption{top: 25%;}
+.header-slider .carousel-caption{top: 25%;}
 .slider-btn-color{background-color: #07657B; color: #fff;text-transform: uppercase; border-radius: 8px;}
 /*lets talk*/
 .lets-talk{background-color: #07657B; color: #E6E6E6}
 .lets-talk .container{padding: 0;}
-.lets-talk img{height: 80px; width: 80px;}
+.lets-talk img{height: 100px; width: 100px;}
 
 /*amazing services*/
 .services, .services-detail{background-color: #F8F9FA;}
 .unique-design img{height: 80vh; width: 100%;}
 .unique-design .active{background-color: #682F92 !important;}
+.unique-design .play-btn{
+    height: 80px; width: 80px; font-size: 40px;color: #E53935; border: 3px solid #E53935; border-radius: 50%; text-align: center; padding-top: 18px; padding-left: 5px;
+}
+.unique-design .carousel-caption{top: 38%; }
 /*how we work*/
 .working-process i{
      text-align: center;width: 100px; height: 100px; border-radius: 50%; padding: 25px 0 0 0;background-color: #07657B; color: #fff; 
@@ -122,3 +126,8 @@ h3, h5{color: #682F92;}
 @media only screen and (max-width: 600px){
     #portfolio{display: none;}
 }
+/*
+.modal-dialog{background-color: #1D1F21;}
+.modal-content{background-color: #1D1F21;}
+.close{color: #5F2D84}*/
+.header-slider #exampleModal{z-index: 999 !important}
