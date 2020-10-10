@@ -56,7 +56,8 @@ h3, h5{color: #682F92;}
      text-align: center;width: 100px; height: 100px; border-radius: 50%; padding: 25px 0 0 0;background-color: #07657B; color: #fff; 
 }
 .working-process-bg{background-color: #F5F5F5; min-height: 350px}
-
+/*sponsor*/
+.sponsor img{min-height: 40px}
 /*Portfolio*/
 
 .portfolio-menu li{border: 1px solid #07657B;padding: 5px 15px; color: #07657B; cursor: pointer;}
@@ -99,6 +100,8 @@ h3, h5{color: #682F92;}
     text-transform: capitalize;
     font-size: 25px;
   }
+.portfolio-overlay a{color: #fff}
+.portfolio-overlay a:hover{color: #07657B; border: 2px solid #07657B; padding: 2px 5px; text-decoration: none}
   .single-portfolio:hover .portfolio-overlay {
     top: 0;
     visibility: visible;
@@ -135,3 +138,4 @@ h3, h5{color: #682F92;}
 .modal-content{background-color: #1D1F21;}
 .close{color: #5F2D84}*/
 /*.header-slider #exampleModal{z-index: 999 !important}*/
+.portfolio-section img{min-height: 150px;}
