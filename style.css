@@ -68,7 +68,7 @@ h3, h5{color: #682F92;}
 	border: 0;
     cursor: pointer;
 }
-  
+.portfolio-section img{min-height: 150px;}
 .portfolio-overlay {
     position: absolute;
     left: 0;
@@ -138,4 +138,6 @@ h3, h5{color: #682F92;}
 .modal-content{background-color: #1D1F21;}
 .close{color: #5F2D84}*/
 /*.header-slider #exampleModal{z-index: 999 !important}*/
-.portfolio-section img{min-height: 150px;}
+.project-section{background-image: url("assets/images/background/project.jpg"); background-size: cover; background-position: center;height: 400px}
+.project-section-content{top: 26%}
+.project-section .overlay{height: 100%; width: 100%; background-color: black; opacity: .7}
