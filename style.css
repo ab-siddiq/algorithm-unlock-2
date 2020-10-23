@@ -13,7 +13,7 @@
 /*global css*/
 body {color: #000a0c;}
 .container {padding: 20px 10px; margin: auto}
-h3, h5,h6{color: #330452;}
+h3, h5,h6{color: #270240;}
 .hr {width: 60px; border: 1px solid #07657B}
 .h {width: 600px; border: 1px solid #f6f6f6}
 .btn-color{background-color: #7B489E; border: none;}
@@ -42,7 +42,9 @@ h3, h5,h6{color: #330452;}
 .lets-talk{background-color: #07657B; color: #E6E6E6}
 .lets-talk .container{padding: 0;}
 .lets-talk img{height: 100px; width: 100px;}
-
+/*about*/
+.story i{color:#07657B; font-size: 50px }
+.story h2,.story h5{color:#07657B; font-weight: bolder}
 /*amazing services*/
 .services{background-color: #D5E5E9;}
 .services i{color: #07657B;}
@@ -58,7 +60,9 @@ h3, h5,h6{color: #330452;}
 }
 .working-process-bg{background-color: #07657b2b; min-height: 350px}
 /*team*/
-.team{background-image: url("assets/images/team/team-background-overlay.jpg"); background-position: center; background-size: cover; background-repeat: no-repeat;}
+.team{background-image: url("assets/images/team/team-background-overlay.jpg"); background-position: center; background-size: cover; background-repeat: no-repeat; letter-spacing: 3px; }
+.team img{margin: auto;}
+
 /*sponsor*/
 .sponsor{background-color: #07657b2b}
 .sponsor img{min-height: 40px}
@@ -114,8 +118,24 @@ h3, h5,h6{color: #330452;}
   }
 /*administration*/
 /*.administration img{height: 200px; width: 200px}*/
+.hex {
+    margin: auto;
+  display: flex;
+  position: relative;
+  width: 150px;
+  height: 130px;
+  -ms-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  -moz-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    transition: all .3s ease-in-out;
+}
+.hex img{transition: transform .2s;}
+.hex img:hover{transform: scale(1.1);}
+
 .administration i{height: 35px; width: 35px; background-color:  #07657B; color: #fff; text-align: center; padding-top: 9px; font-size: 18px}
 .administration i:hover{ background-color:  #7B489E;  }
+
 /*portfolio end*/
 .contact{background-color: #F8F9FA}
 .contact i{background-color: #07657B; height: 50px; width: 50px; text-align: center; padding-top: 12px; color: #fff;}
@@ -129,7 +149,7 @@ h3, h5,h6{color: #330452;}
 .social-link i{margin: 0 5px; font-size: 20px;color: #E6E6E6;}
 .social-link i:hover{color: #7E4CA1;}
 .footer-bottom{background-color: #003a48;}
-.footer-bottom .container{padding: 40px;}
+.footer-bottom .container{padding: 40px; color: #e6e6e6;} 
 
 /*device responsive media query*/
 @media only screen and (max-width: 800px){
@@ -152,15 +172,5 @@ h3, h5,h6{color: #330452;}
 .project-section .overlay{height: 100%; width: 100%; background-color: black; opacity: .7}
 
 
-.hex {
-    margin: auto;
-  display: flex;
-  position: relative;
-  width: 150px;
-  height: 130px;
-  background-color: ;
-  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-}
 
 
