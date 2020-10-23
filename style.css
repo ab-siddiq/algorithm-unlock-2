@@ -13,7 +13,7 @@
 /*global css*/
 body {color: #000a0c;}
 .container {padding: 20px 10px; margin: auto}
-h3, h5,h6{color: #270240;}
+h3, h5,h6{color: #07657B;font-weight: bold}
 .hr {width: 60px; border: 1px solid #07657B}
 .h {width: 600px; border: 1px solid #f6f6f6}
 .btn-color{background-color: #7B489E; border: none;}
