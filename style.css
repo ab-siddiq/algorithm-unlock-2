@@ -45,6 +45,7 @@ h3, h5,h6{color: #07657B;font-weight: bold}
 /*about*/
 .story i{color:#07657B; font-size: 50px }
 .story h2,.story h5{color:#07657B; font-weight: bolder}
+.project-style{background-color: #07657B; color: #fff !important; border-radius: 50%; height: 100px; width: 100px; padding-top: 15px;margin: auto;}
 /*amazing services*/
 .services{background-color: #D5E5E9;}
 .services i{color: #07657B;}
@@ -167,10 +168,21 @@ h3, h5,h6{color: #07657B;font-weight: bold}
 .modal-content{background-color: #1D1F21;}
 .close{color: #5F2D84}*/
 /*.header-slider #exampleModal{z-index: 999 !important}*/
-.project-section{background-image: url("assets/images/background/project.jpg"); background-size: cover; background-position: center;height: 400px}
+.project-section{background-image: url("assets/images/background/project-min.jpg"); background-size: cover; background-position: center;height: 400px}
 .project-section-content{top: 26%}
 .project-section .overlay{height: 100%; width: 100%; background-color: black; opacity: .7}
+.project-body{background-color: #D5E5E9}
+.login-info{border: 1px solid #07657B; padding: 5px 10px;;}
 
-
+.masonry-column {
+  padding: 0 1px;
+}
+.project-body .column{height: auto;}
+/*.grid{max-width: 1200px}*/
+.grid{ column-count: 2; column-gap: 50px; }    
+.grid .grid-item{width: 100%;padding: ;margin-bottom: 30px;border-radius: 6px;break-inside: avoid;}
+@media only screen and (max-width: 800px){
+    .grid{column-count: 1;}
+}
 
 
