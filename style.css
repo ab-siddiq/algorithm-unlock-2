@@ -81,7 +81,6 @@ h6 {
 }
 .navbar {
   background-color: #07657b;
-  opacity: ;
 }
 /*responsive menu icon*/
 .menu-burger {
@@ -315,30 +314,29 @@ h6 {
 }
 /*administration*/
 /*.administration img{height: 200px; width: 200px}*/
-.hex {
-  margin: auto;
+.borad{
   display: flex;
-  position: relative;
-  width: 150px;
-  height: 130px;
-  -ms-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  -moz-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  -webkit-clip-path: polygon(
-    50% 0%,
-    100% 25%,
-    100% 75%,
-    50% 100%,
-    0% 75%,
-    0% 25%
-  );
-  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-  transition: all 0.3s ease-in-out;
+  justify-content: center;
+  align-items: center;
+}
+.hex{
+  background-color: #1E5259;
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .hex img {
-  transition: transform 0.2s;
+  transition:  0.5s ease-in-out;
+  border-radius: 50%;
+  width:  150px;
+  height: 150px;
 }
 .hex img:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .administration i {
@@ -349,9 +347,12 @@ h6 {
   text-align: center;
   padding-top: 9px;
   font-size: 18px;
+  transition: .5s;
+  border-radius: 10px;
 }
 .administration i:hover {
   background-color: #7b489e;
+  transform: rotate(90deg);
 }
 
 /*portfolio end*/
