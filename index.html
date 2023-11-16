@@ -1,914 +1,1507 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <title>Algorithm Unlock</title>
 
     <!--    BOOTSTRAP CSS-->
-    <link rel="icon" type="image/gif" href="assets/images/au_favicon.png">
+    <link rel="icon" type="image/gif" href="assets/images/au_favicon.png" />
     <!--bootstrap-->
-    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css" />
     <!--FONT AWSOME CSS-->
-    <link rel="stylesheet" href="assets/fontawsome/css/all.css">
+    <link rel="stylesheet" href="assets/fontawsome/css/all.css" />
     <!--    animate.css-->
-    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
     <!--    slick slider css-->
-    <link rel="stylesheet" href="assets/css/slick.css">
-    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/slick.css" />
+    <link rel="stylesheet" href="assets/css/slick-theme.css" />
     <!--    fancy box-->
-    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css" />
     <!--CUSTOM CSS-->
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <!-- SECTION START-->
     <div class="menu">
-
-        <nav class="navbar navbar-expand-md fixed-top">
-            <div class="container">
-                <a href="index.html" class="text-montserrat-bold h3 text-uppercase mb-0">au.</a>
-                <button class="navbar-toggler custom-toggler" data-toggle="collapse" data-target="#main-menu">
-                    <i class="fas fa-bars menu-burger"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="main-menu">
-                    <ul class="navbar-nav text-uppercase ml-auto">
-                        <li class="nav-item"><a href="index.html" class="nav-link active">home</a></li>
-                        <li class="nav-item"><a href="#about" class="nav-link">about</a></li>
-                        <li class="nav-item"><a href="project.html" class="nav-link">projects</a></li>
-                        <li class="nav-item"><a href="#services" class="nav-link">services</a></li>
-                        <li class="nav-item"><a href="#portfolio" class="nav-link">portfolio</a></li>
-                        <li class="nav-item"><a href="#administration" class="nav-link">administration</a></li>
-                        <li class="nav-item"><a href="#team" class="nav-link">team</a></li>
-                        <li class="nav-item"><a href="#contact" class="nav-link">contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
+      <nav class="navbar navbar-expand-md fixed-top">
+        <div class="container">
+          <a
+            href="index.html"
+            class="text-montserrat-bold h3 text-uppercase mb-0"
+            >au.</a
+          >
+          <button
+            class="navbar-toggler custom-toggler"
+            data-toggle="collapse"
+            data-target="#main-menu"
+          >
+            <i class="fas fa-bars menu-burger"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="main-menu">
+            <ul class="navbar-nav text-uppercase ml-auto">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link active">home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#about" class="nav-link">about</a>
+              </li>
+              <li class="nav-item">
+                <a href="project.html" class="nav-link">projects</a>
+              </li>
+              <li class="nav-item">
+                <a href="#services" class="nav-link">services</a>
+              </li>
+              <li class="nav-item">
+                <a href="#portfolio" class="nav-link">portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a href="#administration" class="nav-link">administration</a>
+              </li>
+              <li class="nav-item">
+                <a href="#team" class="nav-link">team</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contact" class="nav-link">contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </div>
     <!-- SECTION END-->
     <!--SLIDE SECTION START-->
 
-    <div class="header-slider ">
-
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li class="active slider-indicator" data-target="#carouselExampleIndicators" data-slide-to="0"></li>
-                <li class="slider-indicator" data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li class="slider-indicator" data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                <li class="slider-indicator" data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                <li class="slider-indicator" data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-                <li class="slider-indicator" data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-            </ol>
-            <div class="carousel-inner ">
-
-                <div class="carousel-item active">
-                    <img class="d-block " src="assets/images/background/design-overlay-min.png" alt="First slide">
-                    <div class="carousel-caption text-left">
-                        <div class="row">
-                            <div class="col-lg-5 col-md-9 col-sm-12">
-                                <h2 class="text-uppercase display-4 font-weight-bold animate__animated animate__fadeInLeft
-animate__delay-1s">website design</h2>
-                                <p class="animate__animated animate__fadeInRight animate__delay-2s">Are you thinking to design a website? We are ready to gift your dream pixel perfect design</p>
-                                <!-- Button trigger modal -->
-                                <button class="btn slider-btn-color btn-lg animate__animated animate__fadeInUp animate__delay-3s" data-toggle="modal" data-target="#sliderModal">contact us</button>
-
-                            </div>
-                        </div>
-                    </div>
+    <div class="header-slider">
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            class="active slider-indicator"
+            data-target="#carouselExampleIndicators"
+            data-slide-to="0"
+          ></li>
+          <li
+            class="slider-indicator"
+            data-target="#carouselExampleIndicators"
+            data-slide-to="1"
+          ></li>
+          <li
+            class="slider-indicator"
+            data-target="#carouselExampleIndicators"
+            data-slide-to="2"
+          ></li>
+          <li
+            class="slider-indicator"
+            data-target="#carouselExampleIndicators"
+            data-slide-to="3"
+          ></li>
+          <li
+            class="slider-indicator"
+            data-target="#carouselExampleIndicators"
+            data-slide-to="4"
+          ></li>
+          <li
+            class="slider-indicator"
+            data-target="#carouselExampleIndicators"
+            data-slide-to="5"
+          ></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              class="d-block"
+              src="assets/images/background/design-overlay-min.png"
+              alt="First slide"
+            />
+            <div class="carousel-caption text-left">
+              <div class="row">
+                <div class="col-lg-5 col-md-9 col-sm-12 text-left">
+                  <h2
+                    class="text-uppercase display-4 font-weight-bold animate__animated animate__fadeInLeft animate__delay-1s"
+                  >
+                    website design
+                  </h2>
+                  <p
+                    class="animate__animated animate__fadeInRight animate__delay-2s"
+                  >
+                    Are you thinking to design a website? We are ready to gift
+                    your dream pixel perfect design
+                  </p>
+                  <!-- Button trigger modal -->
+                  <button
+                    class="btn slider-btn-color btn-lg animate__animated animate__fadeInUp animate__delay-3s"
+                    data-toggle="modal"
+                    data-target="#sliderModal"
+                  >
+                    contact us
+                  </button>
                 </div>
-                <div class="carousel-item">
-                    <img class="d-block " src="assets/images/background/d2-overlay-min.png" alt="Second slide">
-                    <div class="carousel-caption text-left">
-                        <div class="row">
-                            <div class="col-lg-5 col-md-10 col-sm-12">
-                                <h2 class="text-uppercase display-4 font-weight-bold animate__animated animate__fadeInLeft
-animate__delay-1s">web development</h2>
-                                <p class="animate__animated animate__fadeInRight animate__delay-2s">Are you thinking to build web based system application? You are in right place!</p>
-                                <button class="btn slider-btn-color btn-lg animate__animated animate__fadeInUp animate__delay-3s" data-toggle="modal" data-target="#sliderModal">contact us</button>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block " src="assets/images/background/mobile2overlay-min.png" alt="Third slide">
-                    <div class="carousel-caption text-left">
-                        <div class="row">
-                            <div class="col-lg-6 col-md-10 col-sm-12">
-                                <h2 class="text-uppercase display-4 font-weight-bold animate__animated animate__fadeInLeft
-">mobile application</h2>
-                                <p class="animate__animated animate__fadeInRight animate__delay-2s">Need a mobile application? We have perfect people to do your job.</p>
-                                <button class="btn slider-btn-color btn-lg animate__animated animate__fadeInUp animate__delay-3s" data-toggle="modal" data-target="#sliderModal">contact us</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block " src="assets/images/background/g2overlay-min.png" alt="Fourth slide">
-                    <div class="carousel-caption text-left">
-                        <div class="row">
-                            <div class="col-lg-6 col-md-10 col-sm-12">
-                                <h2 class="text-uppercase display-4 font-weight-bold animate__animated animate__fadeInLeft
-animate__delay-1s">graphics design
-                                </h2>
-                                <p class="animate__animated animate__fadeInRight animate__delay-2s">Thinking about business card, banner, website design? Nothing to worry.</p>
-                                <button class="btn slider-btn-color btn-lg animate__animated animate__fadeInUp animate__delay-3s" data-toggle="modal" data-target="#sliderModal">contact us</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block " src="assets/images/background/e1overlay-min.png" alt="Fifth slide">
-                    <div class="carousel-caption text-left">
-                        <div class="row">
-                            <div class="col-lg-6 col-md-10 col-sm-12">
-                                <h2 class="text-uppercase display-4 font-weight-bold animate__animated animate__fadeInLeft
-animate__delay-1s">embeded system</h2>
-                                <p class="animate__animated animate__fadeInRight animate__delay-2s">Have a idea to build new intelligent hardware system? You are in the right place.</p>
-                                <button class="btn slider-btn-color btn-lg animate__animated animate__fadeInUp animate__delay-3s" data-toggle="modal" data-target="#sliderModal">contact us</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block " src="assets/images/background/digital3overlay-min.png" alt="Sixth slide">
-                    <div class="carousel-caption text-left">
-                        <div class="row">
-                            <div class="col-lg-6 col-md-10 col-sm-12">
-                                <h2 class="text-uppercase display-4 font-weight-bold animate__animated animate__fadeInLeft
-animate__delay-1s">digital marketing</h2>
-                                <p class="animate__animated animate__fadeInRight animate__delay-2s">Need to promote you page or business? We have perfect solution for you.</p>
-                                <button class="btn slider-btn-color btn-lg animate__animated animate__fadeInUp animate__delay-3s" data-toggle="modal" data-target="#sliderModal">contact us</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+              </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="" aria-hidden="true"><i class="fas fa-angle-left fa-2x"></i></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="" aria-hidden="true"><i class="fas fa-angle-right fa-2x"></i></span>
-                <span class="sr-only">Next</span>
-            </a>
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block"
+              src="assets/images/background/d2-overlay-min.png"
+              alt="Second slide"
+            />
+            <div class="carousel-caption text-left">
+              <div class="row">
+                <div class="col-lg-5 col-md-10 col-sm-12 text-left">
+                  <h2
+                    class="text-uppercase display-4 font-weight-bold animate__animated animate__fadeInLeft animate__delay-1s"
+                  >
+                    web development
+                  </h2>
+                  <p
+                    class="animate__animated animate__fadeInRight animate__delay-2s"
+                  >
+                    Are you thinking to build web based system application? You
+                    are in right place!
+                  </p>
+                  <button
+                    class="btn slider-btn-color btn-lg animate__animated animate__fadeInUp animate__delay-3s"
+                    data-toggle="modal"
+                    data-target="#sliderModal"
+                  >
+                    contact us
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block"
+              src="assets/images/background/mobile2overlay-min.png"
+              alt="Third slide"
+            />
+            <div class="carousel-caption text-left">
+              <div class="row">
+                <div class="col-lg-6 col-md-10 col-sm-12 text-left">
+                  <h2
+                    class="text-uppercase display-4 font-weight-bold animate__animated animate__fadeInLeft"
+                  >
+                    mobile application
+                  </h2>
+                  <p
+                    class="animate__animated animate__fadeInRight animate__delay-2s"
+                  >
+                    Need a mobile application? We have perfect people to do your
+                    job.
+                  </p>
+                  <button
+                    class="btn slider-btn-color btn-lg animate__animated animate__fadeInUp animate__delay-3s"
+                    data-toggle="modal"
+                    data-target="#sliderModal"
+                  >
+                    contact us
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block"
+              src="assets/images/background/g2overlay-min.png"
+              alt="Fourth slide"
+            />
+            <div class="carousel-caption text-left">
+              <div class="row">
+                <div class="col-lg-6 col-md-10 col-sm-12 text-left">
+                  <h2
+                    class="text-uppercase display-4 font-weight-bold animate__animated animate__fadeInLeft animate__delay-1s"
+                  >
+                    graphics design
+                  </h2>
+                  <p
+                    class="animate__animated animate__fadeInRight animate__delay-2s"
+                  >
+                    Thinking about business card, banner, website design?
+                    Nothing to worry.
+                  </p>
+                  <button
+                    class="btn slider-btn-color btn-lg animate__animated animate__fadeInUp animate__delay-3s"
+                    data-toggle="modal"
+                    data-target="#sliderModal"
+                  >
+                    contact us
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block"
+              src="assets/images/background/e1overlay-min.png"
+              alt="Fifth slide"
+            />
+            <div class="carousel-caption text-left">
+              <div class="row">
+                <div class="col-lg-6 col-md-10 col-sm-12 text-left">
+                  <h2
+                    class="text-uppercase display-4 font-weight-bold animate__animated animate__fadeInLeft animate__delay-1s"
+                  >
+                    embeded system
+                  </h2>
+                  <p
+                    class="animate__animated animate__fadeInRight animate__delay-2s"
+                  >
+                    Have a idea to build new intelligent hardware system? You
+                    are in the right place.
+                  </p>
+                  <button
+                    class="btn slider-btn-color btn-lg animate__animated animate__fadeInUp animate__delay-3s"
+                    data-toggle="modal"
+                    data-target="#sliderModal"
+                  >
+                    contact us
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block"
+              src="assets/images/background/digital3overlay-min.png"
+              alt="Sixth slide"
+            />
+            <div class="carousel-caption text-left">
+              <div class="row">
+                <div class="col-lg-6 col-md-10 col-sm-12 text-left">
+                  <h2
+                    class="text-uppercase display-4 font-weight-bold animate__animated animate__fadeInLeft animate__delay-1s"
+                  >
+                    digital marketing
+                  </h2>
+                  <p
+                    class="animate__animated animate__fadeInRight animate__delay-2s"
+                  >
+                    Need to promote you page or business? We have perfect
+                    solution for you.
+                  </p>
+                  <button
+                    class="btn slider-btn-color btn-lg animate__animated animate__fadeInUp animate__delay-3s"
+                    data-toggle="modal"
+                    data-target="#sliderModal"
+                  >
+                    contact us
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="" aria-hidden="true"
+            ><i class="fas fa-angle-left fa-2x"></i
+          ></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="next"
+        >
+          <span class="" aria-hidden="true"
+            ><i class="fas fa-angle-right fa-2x"></i
+          ></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
     </div>
     <!--SLIDE SECTION END-->
 
     <!--   slider mode-->
 
-
     <!-- Modal -->
     <div class="slider-modal">
-        <div class="modal fade" id="sliderModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title text-capitalize" id="exampleModalLabel">algorithm unlock</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="row text-center">
-                            <div class="col">
-                                <img src="assets/images/au_favicon.png" clas="img-fluid m-auto" alt="">
-                                <p class="font-weight-bold h3 text-capitalize mt-2">algorithm unlock<span>.</span></p>
-                                <p>
-                                    Ka - 28/4/1, Dhalibari More, Saudi Masjid Road, Norda, Vatara, 1212 Dhaka, Dhaka Division, Bangladesh
-                                    <br><br>
-                                    <strong>Phone:</strong> +880 1724759004<br>
-                                    <strong>Email:</strong> info@algorithmunlock.com<br>
-                                </p>
-
-                                <div class="slider-social-link mt-4">
-                                    <a href="#" class="twitter mx-2"><i class="fab fa-twitter"></i></a>
-                                    <a href="https://www.facebook.com/algorithmunlock/" target="_blank" class="facebook mx-2"><i class="fab fa-facebook"></i></a>
-                                    <a href="#" class="instagram mx-2"><i class="fab fa-instagram"></i></a>
-                                    <a href="#" class="google-plus mx-2"><i class="fab fa-skype"></i></a>
-                                    <a href="#" class="linkedin mx-2"><i class="fab fa-linkedin-in"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
+      <div
+        class="modal fade"
+        id="sliderModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-capitalize" id="exampleModalLabel">
+                algorithm unlock
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
             </div>
+            <div class="modal-body">
+              <div class="row text-center">
+                <div class="col">
+                  <img
+                    src="assets/images/au_favicon.png"
+                    clas="img-fluid m-auto"
+                    alt=""
+                  />
+                  <p class="font-weight-bold h3 text-capitalize mt-2">
+                    algorithm unlock<span>.</span>
+                  </p>
+                  <p>
+                    Ka - 28/4/1, Dhalibari More, Saudi Masjid Road, Norda,
+                    Vatara, 1212 Dhaka, Dhaka Division, Bangladesh
+                    <br /><br />
+                    <strong>Phone:</strong> +880 1724759004<br />
+                    <strong>Email:</strong> info@algorithmunlock.com<br />
+                  </p>
+
+                  <div class="slider-social-link mt-4">
+                    <a href="#" class="twitter mx-2"
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+                    <a
+                      href="https://www.facebook.com/algorithmunlock/"
+                      target="_blank"
+                      class="facebook mx-2"
+                      ><i class="fab fa-facebook"></i
+                    ></a>
+                    <a href="#" class="instagram mx-2"
+                      ><i class="fab fa-instagram"></i
+                    ></a>
+                    <a href="#" class="google-plus mx-2"
+                      ><i class="fab fa-skype"></i
+                    ></a>
+                    <a href="#" class="linkedin mx-2"
+                      ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">
+                Close
+              </button>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <!--   slider mode-->
 
-
     <!--    SECTION START-->
     <section id="">
-        <div class="lets-talk py-2">
-            <div class="container ">
-                <div class="row justify-content-middle align-middle px-2">
-                    <div class="col-lg-6  col-md-6 col-sm-12 m-auto">
-                        <p class=" mb-0">Need assitance with complex tech project?</p>
+      <div class="lets-talk py-2">
+        <div class="container">
+          <div class="row justify-content-middle align-middle px-2">
+            <div class="col-lg-6 col-md-6 col-sm-12 m-auto">
+              <p class="mb-0">Need assitance with complex tech project?</p>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 my-2 text-right">
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn btn-primary text-uppercase btn-color"
+                data-toggle="modal"
+                data-target="#talkModal"
+              >
+                let's talk <i class="fas fa-angle-double-right ml-2"></i>
+              </button>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="talkModal"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="text-center">
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                      <div class="text-capitalize text-center text-primary">
+                        <img
+                          src="assets/images/team/team-2.png"
+                          alt=""
+                          class="img-fluid img-thumbnail rounded-circle mt-5 mb-3"
+                        />
+                        <h3 class="">Md. Nur-A-Alam</h3>
+                        <p class="my-0">
+                          <label for="" class="text-uppercase">ceo</label>,
+                          algorithm unlock
+                        </p>
+                      </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 my-2 text-right">
-
-                        <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary text-uppercase btn-color" data-toggle="modal" data-target="#talkModal">
-                            let's talk <i class="fas fa-angle-double-right ml-2"></i>
-                        </button>
-
-
-                        <!-- Modal -->
-                        <div class="modal fade" id="talkModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class=" text-center">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                        <div class="text-capitalize text-center text-primary">
-                                            <img src="assets/images/team/team-2.png" alt="" class="img-fluid img-thumbnail rounded-circle mt-5 mb-3">
-                                            <h3 class="">Md. Nur-A-Alam</h3>
-                                            <p class="my-0"><label for="" class="text-uppercase">ceo</label>, algorithm unlock</p>
-                                        </div>
-                                    </div>
-                                    <div class="modal-body">
-                                        <form class="needs-validation" novalidate>
-
-                                            <div class="form-group mb-3">
-
-                                                <input type="text" class="form-control" placeholder="Name" value="" required>
-                                                <div class="valid-feedback">
-                                                    Looks good!
-                                                </div>
-                                            </div>
-                                            <div class="form-group mb-3">
-                                                <input type="tel" pattern=".{11}" class="form-control" placeholder="Mobile Number" value="" required>
-                                                <div class="valid-feedback">
-                                                    Looks good!
-                                                </div>
-                                            </div>
-
-                                            <div class="form-group mb-3">
-                                                <input type="email" class="form-control" placeholder="Email Address" value="" required>
-                                                <div class="valid-feedback">
-                                                    Looks good!
-                                                </div>
-                                            </div>
-
-                                            <div class="form-group mb-3">
-                                                <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
-                                                <div class="valid-feedback">
-                                                    Looks good!
-                                                </div>
-                                            </div>
-
-
-                                            <button class="btn btn-success text-uppercase" type="submit">send message</button>
-                                            <button type="button" class="btn btn-danger text-uppercase" data-dismiss="modal">close</button>
-                                        </form>
-
-                                    </div>
-
-                                </div>
-                            </div>
+                    <div class="modal-body">
+                      <form class="needs-validation" novalidate>
+                        <div class="form-group mb-3">
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Name"
+                            value=""
+                            required
+                          />
+                          <div class="valid-feedback">Looks good!</div>
+                        </div>
+                        <div class="form-group mb-3">
+                          <input
+                            type="tel"
+                            pattern=".{11}"
+                            class="form-control"
+                            placeholder="Mobile Number"
+                            value=""
+                            required
+                          />
+                          <div class="valid-feedback">Looks good!</div>
                         </div>
 
+                        <div class="form-group mb-3">
+                          <input
+                            type="email"
+                            class="form-control"
+                            placeholder="Email Address"
+                            value=""
+                            required
+                          />
+                          <div class="valid-feedback">Looks good!</div>
+                        </div>
 
+                        <div class="form-group mb-3">
+                          <textarea
+                            class="form-control"
+                            rows="4"
+                            placeholder="Your Message"
+                            required
+                          ></textarea>
+                          <div class="valid-feedback">Looks good!</div>
+                        </div>
 
+                        <button
+                          class="btn btn-success text-uppercase"
+                          type="submit"
+                        >
+                          send message
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-danger text-uppercase"
+                          data-dismiss="modal"
+                        >
+                          close
+                        </button>
+                      </form>
                     </div>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
     <!--    SECTION END-->
     <!-- SECTION START-->
     <section id="about">
-        <div class="story">
-            <div class="container ">
-                <div class="row justify-content-center">
-                    <div class="col-12 ">
-
-                        <h3 class="text-uppercase text-montserrat text-center">story about us</h3>
-                        <hr class="hr">
-
-                    </div>
-                    <div class="row justify-content-center pt-2 px-5">
-                        <div class="col-lg-6 col-md-8 col-sm-12 text-justify">
-                            <p> Algorithm Unlock develop application software for state agencies and another state agencies. It combines state of the art solution design, robust back-end systems with efficient project management in a single turnkey solution for national IT infrastructure undertakings. </p>
-                            <!--
+      <div class="story">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12">
+              <h3 class="text-uppercase text-montserrat text-center">
+                story about us
+              </h3>
+              <hr class="hr" />
+            </div>
+            <div class="row justify-content-center pt-2 px-5">
+              <div class="col-lg-6 col-md-8 col-sm-12 text-justify">
+                <p>
+                  Algorithm Unlock develop application software for state
+                  agencies and another state agencies. It combines state of the
+                  art solution design, robust back-end systems with efficient
+                  project management in a single turnkey solution for national
+                  IT infrastructure undertakings.
+                </p>
+                <!--
                             <p>
                                 Algorithm Unlock has worked School Management System, Hospital Management System, Hotel Management System, Workshop Management System, Pettrol pamp management system . In addition, Algorithm Unlock provides highly specialized system integration of 3rd party hardware/software with legacy systems, including identity governance, Enterprise Single Sign-On, identity and access management solutions to large organizations like banks, telecom companies and multinational companies. </p>
 -->
-                            <p>
-                                We provide high-quality products with excellent service and solution for: Dogotal Forensic - apart from sale we can arrange training courses for our customers, Safety & Security solution, Testing Equipment for Soil and Metarials, Geotechnical & structural monitoring and Survey Equipment etc. We supply a range of quility equipment from arounf the world.</p>
+                <p>
+                  We provide high-quality products with excellent service and
+                  solution for: Dogotal Forensic - apart from sale we can
+                  arrange training courses for our customers, Safety & Security
+                  solution, Testing Equipment for Soil and Metarials,
+                  Geotechnical & structural monitoring and Survey Equipment etc.
+                  We supply a range of quility equipment from arounf the world.
+                </p>
 
-
-                           <div class="row text-center text-uppercase">
-                                <div class="col-4  my-3 ">
-                                    <div class="project-style">
-                                        <p class="h2 text-montserrat-bold my-0">17</p>
-                                        <p class="h6 my-0">projects</p>
-                                    </div>
-                                </div>
-                                <div class="col-4  my-3">
-                                    <div class="project-style">
-                                        <p class="h2 my-0 text-montserrat-bold">7</p>
-                                        <p class="h6 my-0">clients</p>
-                                    </div>
-
-                                </div>
-
-                                <div class="col-4  my-3">
-                                    <div class="project-style">
-                                        <p class="h2 my-0 text-montserrat-bold">25</p>
-                                        <p class="h6 my-0">members</p>
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-                        <div class="col-lg-6 col-md-4 col-sm-12 ">
-                            <img src="assets/images/another/Background.JPG" class="img-fluid h-100" alt="">
-                        </div>
-
-
-
+                <div class="row text-center text-uppercase">
+                  <div class="col-4 my-3">
+                    <div class="project-style">
+                      <p class="h2 text-montserrat-bold my-0">17</p>
+                      <p class="h6 my-0">projects</p>
                     </div>
+                  </div>
+                  <div class="col-4 my-3">
+                    <div class="project-style">
+                      <p class="h2 my-0 text-montserrat-bold">7</p>
+                      <p class="h6 my-0">clients</p>
+                    </div>
+                  </div>
 
+                  <div class="col-4 my-3">
+                    <div class="project-style">
+                      <p class="h2 my-0 text-montserrat-bold">25</p>
+                      <p class="h6 my-0">members</p>
+                    </div>
+                  </div>
                 </div>
-
+              </div>
+              <div class="col-lg-6 col-md-4 col-sm-12">
+                <img
+                  src="assets/images/another/Background.JPG"
+                  class="img-fluid h-100"
+                  alt=""
+                />
+              </div>
             </div>
+          </div>
         </div>
-
+      </div>
     </section>
     <!-- SECTION END-->
     <!-- SECTION START-->
     <section id="services" class="">
-
-        <div class="row justify-content-center">
-            <div class="col text-center">
-
-                <h3 class="text-uppercase text-montserrat">amazing services</h3>
-                <hr class="hr">
-            </div>
+      <div class="row justify-content-center">
+        <div class="col text-center">
+          <h3 class="text-uppercase text-montserrat">amazing services</h3>
+          <hr class="hr" />
         </div>
-        <div class="services">
-            <div class="container">
-                <div class="row justify-content-center m-auto text-justify">
-
-                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 my-3">
-                        <div class="row">
-                            <div class="col-2 text-center"><i class="fas fa-desktop fa-2x"></i></div>
-                            <div class="col-10 text-left">
-                                <h4 class="text-uppercase">web design</h4>
-                                <p>Are you thinking to design your website. We have expert people to make your dream true. We provide you pixel perfect unique design with faster speed.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 my-3">
-                        <div class="row">
-                            <div class="col-2 text-center"><i class="fas fa-cogs fa-2x"></i></div>
-                            <div class="col-10 text-left">
-                                <h4 class="text-uppercase">web development</h4>
-                                <p>Do you want a web based automated system for your business? We are providing secure multipurpose sytem. We also provide live support with terms and conditions.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <hr>
-
-                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 my-3">
-                        <div class="row">
-                            <div class="col-2 text-center"><i class="fas fa-mobile fa-2x"></i></div>
-                            <div class="col-10 text-left">
-                                <h4 class="text-uppercase">mobile app</h4>
-                                <p>We also provide mobile application. Our mobile applications are smooth, user friendly, smooth and fast with unique interface. We also provide live support with terms and conditions. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 my-3">
-                        <div class="row">
-                            <div class="col-2 text-center"><i class="fas fa-microchip fa-2x"></i></div>
-                            <div class="col-10 text-left">
-                                <h4 class="text-uppercase">embeded system</h4>
-                                <p>Do you need customized intelligent hardware system like alarm door lock, object detection sensors etc. We are proving such sytem within limited time based on your requirements and demand.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 my-3">
-                        <div class="row">
-                            <div class="col-2 text-center"><i class="fas fa-palette fa-2x"></i></div>
-                            <div class="col-10 text-left">
-                                <h4 class="text-uppercase">graphic design</h4>
-                                <p>Are you searching unique design for your banner, books, websites or other materials. Don't be panic. We are here to gift your dreaming design withing a short time period. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 my-3">
-                        <div class="row">
-                            <div class="col-2 text-center"><i class="fas fa-bullhorn fa-2x"></i></div>
-                            <div class="col-10 text-left">
-                                <h4 class="text-uppercase">digital marketing</h4>
-                                <p>Do you need to promote your youtube channel, facebook page? Need more traffic on your website? Need to SEO on your website? We are providing such services with minimal cost. </p>
-                            </div>
-                        </div>
-                    </div>
-
+      </div>
+      <div class="services">
+        <div class="container">
+          <div class="row justify-content-center m-auto text-justify">
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12 my-3">
+              <div class="row">
+                <div class="col-2 text-center">
+                  <i class="fas fa-desktop fa-2x"></i>
                 </div>
+                <div class="col-10 text-left">
+                  <h4 class="text-uppercase">web design</h4>
+                  <p>
+                    Are you thinking to design your website. We have expert
+                    people to make your dream true. We provide you pixel perfect
+                    unique design with faster speed.
+                  </p>
+                </div>
+              </div>
             </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12 my-3">
+              <div class="row">
+                <div class="col-2 text-center">
+                  <i class="fas fa-cogs fa-2x"></i>
+                </div>
+                <div class="col-10 text-left">
+                  <h4 class="text-uppercase">web development</h4>
+                  <p>
+                    Do you want a web based automated system for your business?
+                    We are providing secure multipurpose sytem. We also provide
+                    live support with terms and conditions.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <hr />
+
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12 my-3">
+              <div class="row">
+                <div class="col-2 text-center">
+                  <i class="fas fa-mobile fa-2x"></i>
+                </div>
+                <div class="col-10 text-left">
+                  <h4 class="text-uppercase">mobile app</h4>
+                  <p>
+                    We also provide mobile application. Our mobile applications
+                    are smooth, user friendly, smooth and fast with unique
+                    interface. We also provide live support with terms and
+                    conditions.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12 my-3">
+              <div class="row">
+                <div class="col-2 text-center">
+                  <i class="fas fa-microchip fa-2x"></i>
+                </div>
+                <div class="col-10 text-left">
+                  <h4 class="text-uppercase">embeded system</h4>
+                  <p>
+                    Do you need customized intelligent hardware system like
+                    alarm door lock, object detection sensors etc. We are
+                    proving such sytem within limited time based on your
+                    requirements and demand.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12 my-3">
+              <div class="row">
+                <div class="col-2 text-center">
+                  <i class="fas fa-palette fa-2x"></i>
+                </div>
+                <div class="col-10 text-left">
+                  <h4 class="text-uppercase">graphic design</h4>
+                  <p>
+                    Are you searching unique design for your banner, books,
+                    websites or other materials. Don't be panic. We are here to
+                    gift your dreaming design withing a short time period.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12 my-3">
+              <div class="row">
+                <div class="col-2 text-center">
+                  <i class="fas fa-bullhorn fa-2x"></i>
+                </div>
+                <div class="col-10 text-left">
+                  <h4 class="text-uppercase">digital marketing</h4>
+                  <p>
+                    Do you need to promote your youtube channel, facebook page?
+                    Need more traffic on your website? Need to SEO on your
+                    website? We are providing such services with minimal cost.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <!-- SECTION END-->
     <!-- SECTION START-->
     <div class="unique-design">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-5 text-center">
-
-                    <h3 class="text-uppercase text-montserrat">unique design</h3>
-                    <hr class=" hr">
-                </div>
-            </div>
-
-
-            <div id="carouselExampleIndicator" class="carousel slide m-auto" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li class="active slider-indicator" data-target="#carouselExampleIndicator" data-slide-to="0"></li>
-                    <li class="slider-indicator" data-target="#carouselExampleIndicator" data-slide-to="1"></li>
-                    <li class="slider-indicator" data-target="#carouselExampleIndicator" data-slide-to="2"></li>
-                    <li class="slider-indicator" data-target="#carouselExampleIndicator" data-slide-to="3"></li>
-                    <li class="slider-indicator" data-target="#carouselExampleIndicator" data-slide-to="4"></li>
-                    <li class="slider-indicator" data-target="#carouselExampleIndicator" data-slide-to="5"></li>
-                </ol>
-                <div class="carousel-inner ">
-
-                    <div class="carousel-item active">
-                        <img class="d-block " src="assets/images/background/design-overlay-min.png" alt="First slide">
-
-                        <div class="carousel-caption">
-                            <div class="row">
-                                <div class="col">
-                                    <a href="https://www.youtube.com/watch?v=aYQLiudgcZQ&list=PLYsHr4qWYQmyhLyl9O4ea73t5GmtqYBjF&fbclid=IwAR2qee_qBVRu1JAhwPYQLVDlPF_Pexn0LbFuphmnizITPkpWsucW6-7YjEY&ab_channel=EasyLearnSchool" class="img-fluid" data-fancybox data-caption="Caption for single image">
-                                        <i class="fas fa-play play-btn"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block " src="assets/images/background/d2-overlay-min.png" alt="Second slide">
-                        <div class="carousel-caption">
-                            <div class="row">
-                                <div class="col">
-                                    <a href="https://www.youtube.com/watch?v=yJJvjKc0AbU&ab_channel=EasyLearnSchool" class="img-fluid" data-fancybox data-caption="Caption for single image">
-                                        <i class="fas fa-play play-btn"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block " src="assets/images/background/mobile2overlay-min.png" alt="Third slide">
-                        <div class="carousel-caption">
-                            <div class="row">
-                                <div class="col">
-                                    <a href="https://www.youtube.com/watch?v=f3NWvUV8MD8" class="img-fluid" data-fancybox data-caption="Caption for single image">
-                                        <i class="fas fa-play play-btn"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block " src="assets/images/background/g2overlay-min.png" alt="Fourth slide">
-                        <div class="carousel-caption">
-                            <div class="row">
-                                <div class="col">
-                                    <a href="https://www.youtube.com/watch?v=f3NWvUV8MD8" class="img-fluid" data-fancybox data-caption="Caption for single image">
-                                        <i class="fas fa-play play-btn"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block " src="assets/images/background/e1overlay-min.png" alt="Fifth slide">
-                        <div class="carousel-caption">
-                            <div class="row">
-                                <div class="col">
-                                    <a href="https://www.youtube.com/watch?v=f3NWvUV8MD8" class="img-fluid" data-fancybox data-caption="Caption for single image">
-                                        <i class="fas fa-play play-btn"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block " src="assets/images/background/digital3overlay-min.png" alt="Sixth slide">
-                        <div class="carousel-caption">
-                            <div class="row">
-                                <div class="col">
-                                    <a href="https://www.youtube.com/watch?v=f3NWvUV8MD8" class="img-fluid" data-fancybox data-caption="Caption for single image">
-                                        <i class="fas fa-play play-btn"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicator" role="button" data-slide="prev">
-                    <span class="" aria-hidden="true"><i class="fas fa-angle-left fa-2x"></i></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicator" role="button" data-slide="next">
-                    <span class="" aria-hidden="true"><i class="fas fa-angle-right fa-2x"></i></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-5 text-center">
+            <h3 class="text-uppercase text-montserrat">unique design</h3>
+            <hr class="hr" />
+          </div>
         </div>
+
+        <div
+          id="carouselExampleIndicator"
+          class="carousel slide m-auto"
+          data-ride="carousel"
+        >
+          <ol class="carousel-indicators">
+            <li
+              class="active slider-indicator"
+              data-target="#carouselExampleIndicator"
+              data-slide-to="0"
+            ></li>
+            <li
+              class="slider-indicator"
+              data-target="#carouselExampleIndicator"
+              data-slide-to="1"
+            ></li>
+            <li
+              class="slider-indicator"
+              data-target="#carouselExampleIndicator"
+              data-slide-to="2"
+            ></li>
+            <li
+              class="slider-indicator"
+              data-target="#carouselExampleIndicator"
+              data-slide-to="3"
+            ></li>
+            <li
+              class="slider-indicator"
+              data-target="#carouselExampleIndicator"
+              data-slide-to="4"
+            ></li>
+            <li
+              class="slider-indicator"
+              data-target="#carouselExampleIndicator"
+              data-slide-to="5"
+            ></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                class="d-block"
+                src="assets/images/background/design-overlay-min.png"
+                alt="First slide"
+              />
+
+              <div class="carousel-caption">
+                <div class="row">
+                  <div class="col">
+                    <a
+                      href="https://www.youtube.com/watch?v=aYQLiudgcZQ&list=PLYsHr4qWYQmyhLyl9O4ea73t5GmtqYBjF&fbclid=IwAR2qee_qBVRu1JAhwPYQLVDlPF_Pexn0LbFuphmnizITPkpWsucW6-7YjEY&ab_channel=EasyLearnSchool"
+                      class="img-fluid"
+                      data-fancybox
+                      data-caption="Caption for single image"
+                    >
+                      <i class="fas fa-play play-btn"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-block"
+                src="assets/images/background/d2-overlay-min.png"
+                alt="Second slide"
+              />
+              <div class="carousel-caption">
+                <div class="row">
+                  <div class="col">
+                    <a
+                      href="https://www.youtube.com/watch?v=yJJvjKc0AbU&ab_channel=EasyLearnSchool"
+                      class="img-fluid"
+                      data-fancybox
+                      data-caption="Caption for single image"
+                    >
+                      <i class="fas fa-play play-btn"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-block"
+                src="assets/images/background/mobile2overlay-min.png"
+                alt="Third slide"
+              />
+              <div class="carousel-caption">
+                <div class="row">
+                  <div class="col">
+                    <a
+                      href="https://www.youtube.com/watch?v=f3NWvUV8MD8"
+                      class="img-fluid"
+                      data-fancybox
+                      data-caption="Caption for single image"
+                    >
+                      <i class="fas fa-play play-btn"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-block"
+                src="assets/images/background/g2overlay-min.png"
+                alt="Fourth slide"
+              />
+              <div class="carousel-caption">
+                <div class="row">
+                  <div class="col">
+                    <a
+                      href="https://www.youtube.com/watch?v=f3NWvUV8MD8"
+                      class="img-fluid"
+                      data-fancybox
+                      data-caption="Caption for single image"
+                    >
+                      <i class="fas fa-play play-btn"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-block"
+                src="assets/images/background/e1overlay-min.png"
+                alt="Fifth slide"
+              />
+              <div class="carousel-caption">
+                <div class="row">
+                  <div class="col">
+                    <a
+                      href="https://www.youtube.com/watch?v=f3NWvUV8MD8"
+                      class="img-fluid"
+                      data-fancybox
+                      data-caption="Caption for single image"
+                    >
+                      <i class="fas fa-play play-btn"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-block"
+                src="assets/images/background/digital3overlay-min.png"
+                alt="Sixth slide"
+              />
+              <div class="carousel-caption">
+                <div class="row">
+                  <div class="col">
+                    <a
+                      href="https://www.youtube.com/watch?v=f3NWvUV8MD8"
+                      class="img-fluid"
+                      data-fancybox
+                      data-caption="Caption for single image"
+                    >
+                      <i class="fas fa-play play-btn"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleIndicator"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="" aria-hidden="true"
+              ><i class="fas fa-angle-left fa-2x"></i
+            ></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleIndicator"
+            role="button"
+            data-slide="next"
+          >
+            <span class="" aria-hidden="true"
+              ><i class="fas fa-angle-right fa-2x"></i
+            ></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
     </div>
     <!-- SECTION END-->
 
-
     <!--    WORKING PROCESS SECTION START-->
     <section id="process">
-        <div class="working-process">
-            <div class="container">
-                <div class="row text-center justify-content-center">
-                    <div class="col-10 text-center pb-2">
-
-                        <h3 class="text-uppercase text-montserrat">How We Work</h3>
-                        <hr class="hr">
-                        <!--                        <p class="text-roboto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>-->
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 ">
-                        <div class="working-process-bg px-3 py-4">
-                            <i class="far fa-comments fa-3x"></i>
-                            <h4 class="text-capitalize pt-2">discussion</h4>
-                            <p class="">We have expert people to do your project. If you have any idea, nothing to worry. Let's start. Our engineers are here to sort out every details before starting.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 ">
-                        <div class="working-process-bg px-3 py-4">
-                            <i class="far fa-file-word fa-3x"></i>
-                            <h4 class="text-capitalize pt-2">proposal</h4>
-                            <p class="">As soon as possible we get your project requiremnts, we will provide all the details in our project proposal which includes project duration, project pricing and signed documents.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 ">
-                        <div class="working-process-bg px-3 py-4">
-                            <i class="fas fa-tasks fa-3x"></i>
-                            <h4 class="text-capitalize pt-2">progress</h4>
-                            <p class="">You can get regular update of your work if you want. Our project manager will send you project progress depending on your demand as per project requiremnets.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 ">
-                        <div class="working-process-bg px-3 py-4">
-                            <i class="fas fa-rocket fa-3x"></i>
-                            <h4 class="text-capitalize pt-2">delivery</h4>
-                            <p class="">We will deliver your project on time as per your requirements. Our quality work and credibility is what kept us in this business.</p>
-                        </div>
-                    </div>
-
-                </div>
+      <div class="working-process">
+        <div class="container">
+          <div class="row text-center justify-content-center">
+            <div class="col-10 text-center pb-2">
+              <h3 class="text-uppercase text-montserrat">How We Work</h3>
+              <hr class="hr" />
+              <!--                        <p class="text-roboto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>-->
             </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="working-process-bg px-3 py-4">
+                <i class="far fa-comments fa-3x"></i>
+                <h4 class="text-capitalize pt-2">discussion</h4>
+                <p class="">
+                  We have expert people to do your project. If you have any
+                  idea, nothing to worry. Let's start. Our engineers are here to
+                  sort out every details before starting.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="working-process-bg px-3 py-4">
+                <i class="far fa-file-word fa-3x"></i>
+                <h4 class="text-capitalize pt-2">proposal</h4>
+                <p class="">
+                  As soon as possible we get your project requiremnts, we will
+                  provide all the details in our project proposal which includes
+                  project duration, project pricing and signed documents.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="working-process-bg px-3 py-4">
+                <i class="fas fa-tasks fa-3x"></i>
+                <h4 class="text-capitalize pt-2">progress</h4>
+                <p class="">
+                  You can get regular update of your work if you want. Our
+                  project manager will send you project progress depending on
+                  your demand as per project requiremnets.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="working-process-bg px-3 py-4">
+                <i class="fas fa-rocket fa-3x"></i>
+                <h4 class="text-capitalize pt-2">delivery</h4>
+                <p class="">
+                  We will deliver your project on time as per your requirements.
+                  Our quality work and credibility is what kept us in this
+                  business.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <!--    WORKING PROCESS SECTION END-->
     <!-- SECTION START-->
     <section class=" ">
-        <div class="sponsor">
-            <div class="container ">
-                <div class="row autoplay ">
-                    <div class="col my-3 "><img src="assets/images/sponsor/s1.png" class="img-fluid " alt=""></div>
-                    <div class="col my-3 "><img src="assets/images/sponsor/s2.png" class="img-fluid " alt=""></div>
-                </div>
-
+      <div class="sponsor">
+        <div class="container">
+          <div class="row autoplay">
+            <div class="col my-3">
+              <img
+                src="assets/images/sponsor/s1.png"
+                class="img-fluid"
+                alt=""
+              />
             </div>
+            <div class="col my-3">
+              <img
+                src="assets/images/sponsor/s2.png"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <!-- SECTION END-->
 
     <!--PORTFOLIO SECTION START   -->
     <section id="portfolio" class="">
-        <div class="container  portfolio-section">
-            <div class="row text-center">
-                <div class="col-12 ">
-                    <ul class="portfolio-menu list-inline">
-                        <li class="active list-inline-item mb-3" data-filter="*">All</li>
-                        <li class=" list-inline-item mb-3" data-filter=".design">Design</li>
-                        <li class=" list-inline-item mb-3" data-filter=".dev">Development</li>
-                        <li class=" list-inline-item mb-3" data-filter=".app">App</li>
-                        <li class=" list-inline-item mb-3" data-filter=".graphic">Graphics</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row portfolio-item ">
-                <div class="col-lg-3 col-md-4 col-sm-6 design  mb-4">
-                    <div class="single-portfolio">
-                        <img src="assets/images/portfolio/mogo.png" class="img-thumbnail" alt="">
+      <div class="container portfolio-section">
+        <div class="row text-center">
+          <div class="col-12">
+            <ul class="portfolio-menu list-inline">
+              <li class="active list-inline-item mb-3" data-filter="*">All</li>
+              <li class="list-inline-item mb-3" data-filter=".design">
+                Design
+              </li>
+              <li class="list-inline-item mb-3" data-filter=".dev">
+                Development
+              </li>
+              <li class="list-inline-item mb-3" data-filter=".app">App</li>
+              <li class="list-inline-item mb-3" data-filter=".graphic">
+                Graphics
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row portfolio-item">
+          <div class="col-lg-3 col-md-4 col-sm-6 design mb-4">
+            <div class="single-portfolio">
+              <img
+                src="assets/images/portfolio/mogo.png"
+                class="img-thumbnail"
+                alt=""
+              />
 
-                        <div class="portfolio-overlay ">
-                            <!--
+              <div class="portfolio-overlay">
+                <!--
                             <h4>project title</h4>
                             <p class="mb-1">project short description </p>
 -->
-                            <a href="assets/images/portfolio/mogo-site.jpg" class="alert-link text-uppercase h5" data-fancybox data-caption="Caption for single image">
-                                view full design
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 design  mb-4">
-                    <div class="single-portfolio">
-                        <img src="assets/images/portfolio/ledp-new.png" class="img-thumbnail" alt="">
-                        <div class="portfolio-overlay">
-                            <!--
-                            <h4>project title</h4>
-                            <p>project short description</p>
--->
-                            <a href="assets/images/portfolio/ledp.jpg" class="alert-link text-uppercase h5" data-fancybox data-caption="Caption for single image">
-                                view full design
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6  design mb-4">
-                    <div class="single-portfolio">
-                        <img src="assets/images/portfolio/dhaka-university.png" class="img-thumbnail" alt="">
-                        <div class="portfolio-overlay">
-                            <!--
-                            <h4>project title</h4>
-                            <p>project short description</p>
--->
-                            <a href="assets/images/portfolio/dhaka-university.jpg" class="alert-link text-uppercase h5" data-fancybox data-caption="Caption for single image">
-                                view full design
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 dev mb-4">
-                    <div class="single-portfolio">
-                        <img src="assets/images/portfolio/p4.png" class="img-thumbnail" alt="">
-                        <div class="portfolio-overlay">
-                            <!--
-                            <h4>project title</h4>
-                            <p>project short description</p>
--->
-                            <a href="assets/images/portfolio/p4.png" class="alert-link text-uppercase h5" data-fancybox data-caption="Caption for single image">
-                                view full design
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 dev mb-4">
-                    <div class="single-portfolio">
-                        <img src="assets/images/portfolio/p5.png" class="img-thumbnail" alt="">
-                        <div class="portfolio-overlay">
-                            <!--
-                            <h4>project title</h4>
-                            <p>project short description</p>
--->
-                            <a href="assets/images/portfolio/p5.png" class="alert-link text-uppercase h5" data-fancybox data-caption="Caption for single image">
-                                view full design
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 dev mb-4">
-                    <div class="single-portfolio">
-                        <img src="assets/images/portfolio/p6.png" class="img-thumbnail" alt="">
-                        <div class="portfolio-overlay">
-                            <!--
-                            <h4>project title</h4>
-                            <p>project short description</p>
--->
-                            <a href="assets/images/portfolio/p6.png" class="alert-link text-uppercase h5" data-fancybox data-caption="Caption for single image">
-                                view full design
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 dev graphic mb-4">
-                    <div class="single-portfolio">
-                        <img src="assets/images/portfolio/p7.png" class="img-thumbnail" alt="">
-                        <div class="portfolio-overlay">
-                            <!--
-                            <h4>project title</h4>
-                            <p>project short description</p>
--->
-                            <a href="assets/images/portfolio/p7.png" class="alert-link text-uppercase h5" data-fancybox data-caption="Caption for single image">
-                                view full design
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 app mb-4">
-                    <div class="single-portfolio">
-                        <img src="assets/images/portfolio/a1.png" class="img-thumbnail" alt="">
-                        <div class="portfolio-overlay">
-                            <!--
-                            <h4>project title</h4>
-                            <p>project short description</p>
--->
-                            <a href="assets/images/portfolio/a1.png" class="alert-link text-uppercase h5" data-fancybox data-caption="Caption for single image">
-                                view full design
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 app mb-4">
-                    <div class="single-portfolio">
-                        <img src="assets/images/portfolio/a2.png" class="img-thumbnail" alt="">
-                        <div class="portfolio-overlay">
-                            <!--
-                            <h4>project title</h4>
-                            <p>project short description</p>
--->
-                            <a href="assets/images/portfolio/a2.png" class="alert-link text-uppercase h5" data-fancybox data-caption="Caption for single image">
-                                view full design
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 app mb-4">
-                    <div class="single-portfolio">
-                        <img src="assets/images/portfolio/a3.png" class="img-thumbnail" alt="">
-                        <div class="portfolio-overlay">
-                            <!--
-                            <h4>project title</h4>
-                            <p>project short description</p>
--->
-                            <a href="assets/images/portfolio/a3.png" class="alert-link text-uppercase h5" data-fancybox data-caption="Caption for single image">
-                                view full design
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 app mb-4">
-                    <div class="single-portfolio">
-                        <img src="assets/images/portfolio/a4.png" class="img-thumbnail" alt="">
-                        <div class="portfolio-overlay">
-                            <!--
-                            <h4>project title</h4>
-                            <p>project short description</p>
--->
-                            <a href="assets/images/portfolio/a4.png" class="alert-link text-uppercase h5" data-fancybox data-caption="Caption for single image">
-                                view full design
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 app mb-4">
-                    <div class="single-portfolio">
-                        <img src="assets/images/portfolio/a5.png" class="img-thumbnail" alt="">
-                        <div class="portfolio-overlay">
-                            <!--
-                            <h4>project title</h4>
-                            <p>project short description</p>
--->
-                            <a href="assets/images/portfolio/a5.png" class="alert-link text-uppercase h5" data-fancybox data-caption="Caption for single image">
-                                view full design
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
+                <a
+                  href="assets/images/portfolio/mogo-site.jpg"
+                  class="alert-link text-uppercase h5"
+                  data-fancybox
+                  data-caption="Caption for single image"
+                >
+                  view full design
+                </a>
+              </div>
             </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 design mb-4">
+            <div class="single-portfolio">
+              <img
+                src="assets/images/portfolio/ledp-new.png"
+                class="img-thumbnail"
+                alt=""
+              />
+              <div class="portfolio-overlay">
+                <!--
+                            <h4>project title</h4>
+                            <p>project short description</p>
+-->
+                <a
+                  href="assets/images/portfolio/ledp.jpg"
+                  class="alert-link text-uppercase h5"
+                  data-fancybox
+                  data-caption="Caption for single image"
+                >
+                  view full design
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 design mb-4">
+            <div class="single-portfolio">
+              <img
+                src="assets/images/portfolio/dhaka-university.png"
+                class="img-thumbnail"
+                alt=""
+              />
+              <div class="portfolio-overlay">
+                <!--
+                            <h4>project title</h4>
+                            <p>project short description</p>
+-->
+                <a
+                  href="assets/images/portfolio/dhaka-university.jpg"
+                  class="alert-link text-uppercase h5"
+                  data-fancybox
+                  data-caption="Caption for single image"
+                >
+                  view full design
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 dev mb-4">
+            <div class="single-portfolio">
+              <img
+                src="assets/images/portfolio/p4.png"
+                class="img-thumbnail"
+                alt=""
+              />
+              <div class="portfolio-overlay">
+                <!--
+                            <h4>project title</h4>
+                            <p>project short description</p>
+-->
+                <a
+                  href="assets/images/portfolio/p4.png"
+                  class="alert-link text-uppercase h5"
+                  data-fancybox
+                  data-caption="Caption for single image"
+                >
+                  view full design
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 dev mb-4">
+            <div class="single-portfolio">
+              <img
+                src="assets/images/portfolio/p5.png"
+                class="img-thumbnail"
+                alt=""
+              />
+              <div class="portfolio-overlay">
+                <!--
+                            <h4>project title</h4>
+                            <p>project short description</p>
+-->
+                <a
+                  href="assets/images/portfolio/p5.png"
+                  class="alert-link text-uppercase h5"
+                  data-fancybox
+                  data-caption="Caption for single image"
+                >
+                  view full design
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 dev mb-4">
+            <div class="single-portfolio">
+              <img
+                src="assets/images/portfolio/p6.png"
+                class="img-thumbnail"
+                alt=""
+              />
+              <div class="portfolio-overlay">
+                <!--
+                            <h4>project title</h4>
+                            <p>project short description</p>
+-->
+                <a
+                  href="assets/images/portfolio/p6.png"
+                  class="alert-link text-uppercase h5"
+                  data-fancybox
+                  data-caption="Caption for single image"
+                >
+                  view full design
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 dev graphic mb-4">
+            <div class="single-portfolio">
+              <img
+                src="assets/images/portfolio/p7.png"
+                class="img-thumbnail"
+                alt=""
+              />
+              <div class="portfolio-overlay">
+                <!--
+                            <h4>project title</h4>
+                            <p>project short description</p>
+-->
+                <a
+                  href="assets/images/portfolio/p7.png"
+                  class="alert-link text-uppercase h5"
+                  data-fancybox
+                  data-caption="Caption for single image"
+                >
+                  view full design
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 app mb-4">
+            <div class="single-portfolio">
+              <img
+                src="assets/images/portfolio/a1.png"
+                class="img-thumbnail"
+                alt=""
+              />
+              <div class="portfolio-overlay">
+                <!--
+                            <h4>project title</h4>
+                            <p>project short description</p>
+-->
+                <a
+                  href="assets/images/portfolio/a1.png"
+                  class="alert-link text-uppercase h5"
+                  data-fancybox
+                  data-caption="Caption for single image"
+                >
+                  view full design
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 app mb-4">
+            <div class="single-portfolio">
+              <img
+                src="assets/images/portfolio/a2.png"
+                class="img-thumbnail"
+                alt=""
+              />
+              <div class="portfolio-overlay">
+                <!--
+                            <h4>project title</h4>
+                            <p>project short description</p>
+-->
+                <a
+                  href="assets/images/portfolio/a2.png"
+                  class="alert-link text-uppercase h5"
+                  data-fancybox
+                  data-caption="Caption for single image"
+                >
+                  view full design
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 app mb-4">
+            <div class="single-portfolio">
+              <img
+                src="assets/images/portfolio/a3.png"
+                class="img-thumbnail"
+                alt=""
+              />
+              <div class="portfolio-overlay">
+                <!--
+                            <h4>project title</h4>
+                            <p>project short description</p>
+-->
+                <a
+                  href="assets/images/portfolio/a3.png"
+                  class="alert-link text-uppercase h5"
+                  data-fancybox
+                  data-caption="Caption for single image"
+                >
+                  view full design
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 app mb-4">
+            <div class="single-portfolio">
+              <img
+                src="assets/images/portfolio/a4.png"
+                class="img-thumbnail"
+                alt=""
+              />
+              <div class="portfolio-overlay">
+                <!--
+                            <h4>project title</h4>
+                            <p>project short description</p>
+-->
+                <a
+                  href="assets/images/portfolio/a4.png"
+                  class="alert-link text-uppercase h5"
+                  data-fancybox
+                  data-caption="Caption for single image"
+                >
+                  view full design
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 app mb-4">
+            <div class="single-portfolio">
+              <img
+                src="assets/images/portfolio/a5.png"
+                class="img-thumbnail"
+                alt=""
+              />
+              <div class="portfolio-overlay">
+                <!--
+                            <h4>project title</h4>
+                            <p>project short description</p>
+-->
+                <a
+                  href="assets/images/portfolio/a5.png"
+                  class="alert-link text-uppercase h5"
+                  data-fancybox
+                  data-caption="Caption for single image"
+                >
+                  view full design
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-
+      </div>
     </section>
     <!--   -->
 
-
     <!-- SECTION START-->
     <div class="administration" id="administration">
-        <div class="container">
-
-            <div class="row justify-content-center">
-                <div class="col-lg-10 col-11 text-center">
-
-                    <h3 class="text-uppercase text-montserrat">board members</h3>
-                    <hr class="hr">
-                    <!--                    <p class="text-roboto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>-->
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-3 col-md-4 col-sm-6 my-3 text-center">
-                    <div class="hex"> <img src="assets/images/team/team-1.png" class="img-fluid" alt=""></div>
-
-                    <h5 class="text-capitalize text-montserrat mt-3">Md. Deloar Hossain</h5>
-                    <p class="text-capitalize">Board of Directors</p>
-                    <ul class="list-inline">
-                        <li class="list-inline-item"><a href="" class=""><i class="fab fa-linkedin-in"></i></a></li>
-                        <li class="list-inline-item"><a href="" class=""><i class="fab fa-github"></i></a></li>
-                        <li class="list-inline-item"><a href="" class=""><i class="fab fa-linkedin-in"></i></a></li>
-                        <li class="list-inline-item"><a href="https://www.facebook.com/nion224" target="_blank" class=""><i class="fab fa-facebook-f"></i></a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 my-3 text-center">
-                    <div class="hex"><img src="assets/images/team/team-2.png" class="img-fluid" alt=""></div>
-                    <h5 class="text-capitalize text-montserrat mt-3">Md. Nur-A-Alam</h5>
-                    <p class="text-ca mt-3pitalize">Chief Executing Officer (CEO)</p>
-                    <ul class="list-inline">
-                        <li class="list-inline-item"><a href="" class=""><i class="fab fa-linkedin-in"></i></a></li>
-                        <li class="list-inline-item"><a href="" class=""><i class="fab fa-github"></i></a></li>
-                        <li class="list-inline-item"><a href="" class=""><i class="fab fa-linkedin-in"></i></a></li>
-                        <li class="list-inline-item"><a href="https://www.facebook.com/munna.vai.5059" target="_blank" class=""><i class="fab fa-facebook-f"></i></a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 my-3 text-center">
-                    <div class="hex"><img src="assets/images/team/team-3.png" class="img-fluid" alt=""></div>
-                    <h5 class="text-capitalize text-montserrat mt-3">Md. Mahbubur Rahman</h5>
-                    <p class="text-ca mt-3pitalize">Chief Operation Officer (COO)</p>
-                    <ul class="list-inline">
-                        <li class="list-inline-item"><a href="" class=""><i class="fab fa-linkedin-in"></i></a></li>
-                        <li class="list-inline-item"><a href="" class=""><i class="fab fa-github"></i></a ></li>
-                        <li class="list-inline-item"><a href="" class=""><i class="fab fa-linkedin-in"></i></a></li>
-                        <li class="list-inline-item"><a href="https://www.facebook.com/shimulmbstu" target="_blank" class=""><i class="fab fa-facebook-f"></i></a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 my-3 text-center">
-                    <div class="hex"><img src="assets/images/team/team-4.png" class="img-fluid" alt=""></div>
-                    <h5 class="text-capitalize text-montserrat mt-3">Md. Aminul Islam</h5>
-                    <p class="text-ca mt-3pitalize">Chief Technology Officer (CTO)</p>
-                    <ul class="list-inline">
-                        <li class="list-inline-item"><a href="" class=""><i class="fab fa-linkedin-in"></i></a></li>
-                        <li class="list-inline-item"><a href="" class=""><i class="fab fa-github"></i></a></li>
-                        <li class="list-inline-item"><a href="" class=""><i class="fab fa-linkedin-in"></i></a></li>
-                        <li class="list-inline-item"><a href="https://www.facebook.com/arifulweb007" target="_blank" class=""><i class="fab fa-facebook-f"></i></a></li>
-                    </ul>
-                </div>
-
-            </div>
-
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 col-11 text-center">
+            <h3 class="text-uppercase text-montserrat">board members</h3>
+            <hr class="hr" />
+            <!--                    <p class="text-roboto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>-->
+          </div>
         </div>
+
+        <div class="row">
+          <div class="col-lg-3 col-md-4 col-sm-6 my-3 text-center">
+            <div class="hex">
+              <img
+                src="assets/images/team/team-1.png"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+
+            <h5 class="text-capitalize text-montserrat mt-3">
+              Md. Deloar Hossain
+            </h5>
+            <p class="text-capitalize">Board of Directors</p>
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="" class=""><i class="fab fa-linkedin-in"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="" class=""><i class="fab fa-github"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="" class=""><i class="fab fa-linkedin-in"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href="https://www.facebook.com/nion224"
+                  target="_blank"
+                  class=""
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 my-3 text-center">
+            <div class="hex">
+              <img
+                src="assets/images/team/team-2.png"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <h5 class="text-capitalize text-montserrat mt-3">Md. Nur-A-Alam</h5>
+            <p class="text-ca mt-3pitalize">Chief Executing Officer (CEO)</p>
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="" class=""><i class="fab fa-linkedin-in"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="" class=""><i class="fab fa-github"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="" class=""><i class="fab fa-linkedin-in"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href="https://www.facebook.com/munna.vai.5059"
+                  target="_blank"
+                  class=""
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 my-3 text-center">
+            <div class="hex">
+              <img
+                src="assets/images/team/team-3.png"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <h5 class="text-capitalize text-montserrat mt-3">
+              Md. Mahbubur Rahman
+            </h5>
+            <p class="text-ca mt-3pitalize">Chief Operation Officer (COO)</p>
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="" class=""><i class="fab fa-linkedin-in"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="" class=""><i class="fab fa-github"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="" class=""><i class="fab fa-linkedin-in"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href="https://www.facebook.com/shimulmbstu"
+                  target="_blank"
+                  class=""
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 my-3 text-center">
+            <div class="hex">
+              <img
+                src="assets/images/team/team-4.png"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <h5 class="text-capitalize text-montserrat mt-3">
+              Md. Aminul Islam
+            </h5>
+            <p class="text-ca mt-3pitalize">Chief Technology Officer (CTO)</p>
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="" class=""><i class="fab fa-linkedin-in"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="" class=""><i class="fab fa-github"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="" class=""><i class="fab fa-linkedin-in"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href="https://www.facebook.com/arifulweb007"
+                  target="_blank"
+                  class=""
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- SECTION END-->
 
-
     <!-- SECTION START-->
     <section id="team" class="">
-
-
-        <div class="row justify-content-center">
-            <div class="col text-center">
-
-                <h3 class="text-uppercase text-montserrat">our team</h3>
-                <hr class="hr">
-            </div>
+      <div class="row justify-content-center">
+        <div class="col text-center">
+          <h3 class="text-uppercase text-montserrat">our team</h3>
+          <hr class="hr" />
         </div>
-        <div class="team text-white">
-            <div class="container">
-                <div class="row autoplay-team text-capitalize text-center">
-                    <div class="col">
-
-                        <img src="assets/images/engineer/m2.png" class="img-fluid rounded-circle" alt="">
-                        <p class="text-capitalize text-montserrat mb-1 mt-3 h5 font-weight-bold">Md. Aminul Islam </p>
-                        <p class="mb-0">Laravel Developer</p>
-
-                    </div>
-                    <div class="col">
-
-                        <img src="assets/images/engineer/m3.png" class="img-fluid rounded-circle" alt="">
-                        <p class="text-montserrat mb-1 mt-3 h5 font-weight-bold">S.K. Shahriar Sojib</p>
-                        <p class="mb-0">graphic designer</p>
-
-
-                    </div>
-                    <div class="col">
-
-                        <img src="assets/images/engineer/m4.png" class="img-fluid rounded-circle" alt="">
-                        <p class=" text-montserrat mb-1 mt-3 h5 font-weight-bold">Plabon Dotto</p>
-                        <p class="mb-0">Python Developer</p>
-
-                    </div>
-
-
-
-                    <div class="col">
-
-                        <img src="assets/images/p4.png" class="img-fluid" alt="">
-                        <p class=" text-montserrat mb-1 mt-3 h5 font-weight-bold">mathew dix</p>
-                        <p class=" mb-0">graphic design</p>
-                    </div>
-                </div>
-
+      </div>
+      <div class="team text-white">
+        <div class="container">
+          <div class="row autoplay-team text-capitalize text-center">
+            <div class="col">
+              <img
+                src="assets/images/engineer/m2.png"
+                class="img-fluid rounded-circle"
+                alt=""
+              />
+              <p
+                class="text-capitalize text-montserrat mb-1 mt-3 h5 font-weight-bold"
+              >
+                Md. Aminul Islam
+              </p>
+              <p class="mb-0">Laravel Developer</p>
             </div>
+            <div class="col">
+              <img
+                src="assets/images/engineer/m3.png"
+                class="img-fluid rounded-circle"
+                alt=""
+              />
+              <p class="text-montserrat mb-1 mt-3 h5 font-weight-bold">
+                S.K. Shahriar Sojib
+              </p>
+              <p class="mb-0">graphic designer</p>
+            </div>
+            <div class="col">
+              <img
+                src="assets/images/engineer/m4.png"
+                class="img-fluid rounded-circle"
+                alt=""
+              />
+              <p class="text-montserrat mb-1 mt-3 h5 font-weight-bold">
+                Plabon Dotto
+              </p>
+              <p class="mb-0">Python Developer</p>
+            </div>
+
+            <div class="col">
+              <img src="assets/images/p4.png" class="img-fluid" alt="" />
+              <p class="text-montserrat mb-1 mt-3 h5 font-weight-bold">
+                mathew dix
+              </p>
+              <p class="mb-0">graphic design</p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <!-- SECTION END-->
-
 
     <!-- SECTION START-->
     <!--
@@ -932,132 +1525,233 @@ animate__delay-1s">digital marketing</h2>
     <!-- SECTION START-->
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
-        <div class="py-5 container">
-
-            <div class="row justify-content-center">
-                <div class="col-10 text-center">
-
-                    <h3 class="text-uppercase text-montserrat">contact us</h3>
-                    <hr class="hr">
-
-                </div>
-            </div>
-
-            <div class="row py-3 ">
-
-                <div class="col-lg-4  col-md-12 col-sm-12 mb-3">
-                    <div class="info">
-                        <div class="address">
-                            <h4><i class="fas fa-map-marker-alt mr-2"></i>Location:</h4>
-                            <p>Ka - 28/4/1, Dhalibari More, Saudi Masjid Road, Norda, Vatara, 1212 Dhaka, Dhaka Division, Bangladesh</p>
-                        </div>
-                        <div class="email my-3">
-                            <h4 class="d-inline"><i class="far fa-envelope mr-2"></i>Email:</h4>
-                            <p class="d-inline">info@algorithmunlock.com</p>
-                        </div>
-                        <div class="phone">
-                            <h4 class="d-inline"><i class="fas fa-mobile-alt mr-2"></i>Call:</h4>
-                            <p class="d-inline">+880 1724759004</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-8 col-md-12 col-sm-12  mb-3">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.3153816698486!2d90.42341141498241!3d23.80738168456132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1e1731afb799d5d3!2sSpeed%20Auto%20Care%20Ltd.!5e0!3m2!1sen!2sbd!4v1601895100670!5m2!1sen!2sbd" width="100%" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                </div>
-            </div>
+      <div class="py-5 container">
+        <div class="row justify-content-center">
+          <div class="col-10 text-center">
+            <h3 class="text-uppercase text-montserrat">contact us</h3>
+            <hr class="hr" />
+          </div>
         </div>
-    </section><!-- End Contact Section -->
+
+        <div class="row py-3">
+          <div class="col-lg-4 col-md-12 col-sm-12 mb-3">
+            <div class="info">
+              <div class="address">
+                <h4><i class="fas fa-map-marker-alt mr-2"></i>Location:</h4>
+                <p>
+                  Ka - 28/4/1, Dhalibari More, Saudi Masjid Road, Norda, Vatara,
+                  1212 Dhaka, Dhaka Division, Bangladesh
+                </p>
+              </div>
+              <div class="email my-3">
+                <h4 class="d-inline">
+                  <i class="far fa-envelope mr-2"></i>Email:
+                </h4>
+                <p class="d-inline">info@algorithmunlock.com</p>
+              </div>
+              <div class="phone">
+                <h4 class="d-inline">
+                  <i class="fas fa-mobile-alt mr-2"></i>Call:
+                </h4>
+                <p class="d-inline">+880 1724759004</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-8 col-md-12 col-sm-12 mb-3">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.3153816698486!2d90.42341141498241!3d23.80738168456132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1e1731afb799d5d3!2sSpeed%20Auto%20Care%20Ltd.!5e0!3m2!1sen!2sbd!4v1601895100670!5m2!1sen!2sbd"
+              width="100%"
+              height="350"
+              frameborder="0"
+              style="border: 0"
+              allowfullscreen=""
+              aria-hidden="false"
+              tabindex="0"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact Section -->
     <!-- SECTION END-->
     <!-- SECTION START-->
     <footer id="footer">
-        <div class="footer-top pt-4">
-            <div class="container">
-                <div class="row">
+      <div class="footer-top pt-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-12 col-sm-12 mb-3">
+              <div class="">
+                <p class="font-weight-bold h3">AU<span>.</span></p>
+                <p>
+                  Ka - 28/4/1, Dhalibari More, Saudi Masjid Road, Norda, Vatara,
+                  1212 Dhaka, Dhaka Division, Bangladesh
+                  <br /><br />
+                  <strong>Phone:</strong> +880 1724759004<br />
+                  <strong>Email:</strong> info@algorithmunlock.com<br />
+                </p>
 
-                    <div class="col-lg-4 col-md-12 col-sm-12 mb-3">
-                        <div class="">
-                            <p class="font-weight-bold h3">AU<span>.</span></p>
-                            <p>
-                                Ka - 28/4/1, Dhalibari More, Saudi Masjid Road, Norda, Vatara, 1212 Dhaka, Dhaka Division, Bangladesh
-                                <br><br>
-                                <strong>Phone:</strong> +880 1724759004<br>
-                                <strong>Email:</strong> info@algorithmunlock.com<br>
-                            </p>
-
-                            <div class="social-link mt-3">
-                                <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
-                                <a href="https://www.facebook.com/algorithmunlock/" target="_blank" class="facebook"><i class="fab fa-facebook"></i></a>
-                                <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
-                                <a href="#" class="google-plus"><i class="fab fa-skype"></i></a>
-                                <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-2 col-md-6 col-sm-6 col-12 mb-3 footer-links">
-                        <h4>Useful Links</h4>
-                        <ul>
-                            <li><i class="fas fa-angle-right"></i> <a href="#">Home Page</a></li>
-                            <li><i class="fas fa-angle-right"></i> <a href="https://www.facebook.com/algorithmunlock/" target="_blank">AU Facebook Page</a></li>
-                            <li><i class="fas fa-angle-right"></i> <a href="#">AU Blog</a></li>
-                            <li><i class="fas fa-angle-right"></i> <a href="#">Another Service</a></li>
-                            <li><i class="fas fa-angle-right"></i> <a href="#">Privacy policy</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col-lg-2 col-md-6 col-sm-6 col-12 mb-3 footer-links">
-                        <h4>Our Services</h4>
-                        <ul>
-                            <li><i class="fas fa-angle-right"></i> <a href="#">Web Design</a></li>
-                            <li><i class="fas fa-angle-right"></i> <a href="#">Web Development</a></li>
-                            <li><i class="fas fa-angle-right"></i> <a href="#">Mobile App</a></li>
-                            <li><i class="fas fa-angle-right"></i> <a href="#">Marketing</a></li>
-                            <li><i class="fas fa-angle-right"></i> <a href="#">Graphic Design</a></li>
-                            <li><i class="fas fa-angle-right"></i> <a href="#">Hardware</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col-lg-4 col-md-12  col-sm-12 mb-3 footer-newsletter">
-                        <h4 class="mb-3">Our Newsletter</h4>
-                        <div class="">
-                            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                                <div class="form-row">
-                                    <div class="col-md-6 form-group">
-                                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                                        <div class="validate"></div>
-                                    </div>
-                                    <div class="col-md-6 form-group">
-                                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                                        <div class="validate"></div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                                    <div class="validate"></div>
-                                </div>
-                                <div class="form-group">
-                                    <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                                    <div class="validate"></div>
-                                </div>
-                                <div class="text-right"><button class="btn btn-primary text-uppercase btn-color">send message</button></div>
-                            </form>
-
-                        </div>
-                    </div>
-
+                <div class="social-link mt-3">
+                  <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                  <a
+                    href="https://www.facebook.com/algorithmunlock/"
+                    target="_blank"
+                    class="facebook"
+                    ><i class="fab fa-facebook"></i
+                  ></a>
+                  <a href="#" class="instagram"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                  <a href="#" class="google-plus"
+                    ><i class="fab fa-skype"></i
+                  ></a>
+                  <a href="#" class="linkedin"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
                 </div>
+              </div>
             </div>
-        </div>
 
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-12">&copy; Copyright <strong><span>AU.</span></strong> All Rights Reserved</div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 text-right">Designed by <a href="https://facebook.com/abss.pk" target="_blank">Abu Bakkar Siddiq</a></div>
-                </div>
+            <div class="col-lg-2 col-md-6 col-sm-6 col-12 mb-3 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li>
+                  <i class="fas fa-angle-right"></i> <a href="#">Home Page</a>
+                </li>
+                <li>
+                  <i class="fas fa-angle-right"></i>
+                  <a
+                    href="https://www.facebook.com/algorithmunlock/"
+                    target="_blank"
+                    >AU Facebook Page</a
+                  >
+                </li>
+                <li>
+                  <i class="fas fa-angle-right"></i> <a href="#">AU Blog</a>
+                </li>
+                <li>
+                  <i class="fas fa-angle-right"></i>
+                  <a href="#">Another Service</a>
+                </li>
+                <li>
+                  <i class="fas fa-angle-right"></i>
+                  <a href="#">Privacy policy</a>
+                </li>
+              </ul>
             </div>
+
+            <div class="col-lg-2 col-md-6 col-sm-6 col-12 mb-3 footer-links">
+              <h4>Our Services</h4>
+              <ul>
+                <li>
+                  <i class="fas fa-angle-right"></i> <a href="#">Web Design</a>
+                </li>
+                <li>
+                  <i class="fas fa-angle-right"></i>
+                  <a href="#">Web Development</a>
+                </li>
+                <li>
+                  <i class="fas fa-angle-right"></i> <a href="#">Mobile App</a>
+                </li>
+                <li>
+                  <i class="fas fa-angle-right"></i> <a href="#">Marketing</a>
+                </li>
+                <li>
+                  <i class="fas fa-angle-right"></i>
+                  <a href="#">Graphic Design</a>
+                </li>
+                <li>
+                  <i class="fas fa-angle-right"></i> <a href="#">Hardware</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-4 col-md-12 col-sm-12 mb-3 footer-newsletter">
+              <h4 class="mb-3">Our Newsletter</h4>
+              <div class="">
+                <form
+                  action="forms/contact.php"
+                  method="post"
+                  role="form"
+                  class="php-email-form"
+                >
+                  <div class="form-row">
+                    <div class="col-md-6 form-group">
+                      <input
+                        type="text"
+                        name="name"
+                        class="form-control"
+                        id="name"
+                        placeholder="Your Name"
+                        data-rule="minlen:4"
+                        data-msg="Please enter at least 4 chars"
+                      />
+                      <div class="validate"></div>
+                    </div>
+                    <div class="col-md-6 form-group">
+                      <input
+                        type="email"
+                        class="form-control"
+                        name="email"
+                        id="email"
+                        placeholder="Your Email"
+                        data-rule="email"
+                        data-msg="Please enter a valid email"
+                      />
+                      <div class="validate"></div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="subject"
+                      id="subject"
+                      placeholder="Subject"
+                      data-rule="minlen:4"
+                      data-msg="Please enter at least 8 chars of subject"
+                    />
+                    <div class="validate"></div>
+                  </div>
+                  <div class="form-group">
+                    <textarea
+                      class="form-control"
+                      name="message"
+                      rows="5"
+                      data-rule="required"
+                      data-msg="Please write something for us"
+                      placeholder="Message"
+                    ></textarea>
+                    <div class="validate"></div>
+                  </div>
+                  <div class="text-right">
+                    <button class="btn btn-primary text-uppercase btn-color">
+                      send message
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              &copy; Copyright <strong><span>AU.</span></strong> All Rights
+              Reserved
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 text-right">
+              Designed by
+              <a href="https://facebook.com/abss.pk" target="_blank"
+                >Abu Bakkar Siddiq</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
     <!-- SECTION END-->
 
@@ -1080,6 +1774,5 @@ animate__delay-1s">digital marketing</h2>
     <script src="jquery.counterup.min.js"></script>
     <!--    custom js-->
     <script src="assets/js/main.js"></script>
-
-
-</body></html>
+  </body>
+</html>
